@@ -2,8 +2,8 @@
 
 .sidebar {
     /*Setting sidebar parameters*/
-    min-width: 280px;
-    max-width: 280px;
+    min-width: 14.5rem;
+    max-width: 14.5rem;
     height: 100%;
     position: fixed;    
     
@@ -39,32 +39,32 @@
 
 .sidebar-header {
     /*Setting sidebar header parameters*/ 
-    height: 50px;
+    height: 2.5rem;
     width: 100%;
     color: #fff;
     display: flex;
     align-items: center;
-    margin-left: 15px;
-    font-size: 20px;
+    margin-left: 0.938rem;
+    font-size: 1.0rem;
     font-weight: 600; 
 }
 
 .sidebar-header-icons {
     /*Setting sidebar header icon parameters*/ 
-    font-size: 30px;
-    padding: 10px 10px 0px 0px;
+    font-size: 1.5rem;
+    padding: 0.625rem 0.625rem 0rem 0rem;
 }
 
 .sidebar-header-span {
     /*Setting sidebar header span parameters*/
-    padding: 15px 0px 0px 0px;
+    padding: 0.938rem 0rem 0rem 0rem;
     text-decoration: none;
     color: #fff;
 }
 
 .sidebar-header-span:hover {
     /*Setting sidebar header span float parameters*/
-    padding: 15px 0px 0px 0px;
+    padding: 0.938rem 0rem 0rem 0rem;
     text-decoration: none;
     color: #f4cf6d;    
 }
@@ -73,26 +73,26 @@
     /*Setting sidebar div parameters*/ 
     background-color: rgba(215, 41, 61,0);
     width: 100%;
-    margin-left: 10px;
+    margin-left: 0.625rem;
     cursor: pointer !important;
 }
 
 .sidebar-btn {
     /*Setting the sidebar button parameters*/ 
     background-color: rgba(215, 41, 61,0);
-    padding: 10px;
+    padding: 0.625rem;
     width: 100%;
-    border: rgba(215, 41, 61,0) 1px solid;
+    border: rgba(215, 41, 61,0) 0.063rem solid;
     opacity: 1;
     color:#fff ; 
     text-align: left !important;
-    font-size: 20px;
+    font-size: 0.9rem;
     text-decoration: none;
 }
 
 .sidebar-btn-span {
     /*Setting the sidebar button span parameters*/
-    margin-left: 10px;
+    margin-left: 0.625rem;
 }
 
 .sidebar-btn:hover {
@@ -120,9 +120,9 @@
 .sidebar-btn-ul {
     /*Setting the sidebar button ul parameters*/
     background-color: #d7293d !important;
-    border-radius: 0px !important;
-    margin-left: 270px !important;
-    margin-top: -35px !important;
+    border-radius: 0rem !important;
+    margin-left: 13.875rem !important;
+    margin-top: -2.188rem !important;
 
 }
 
@@ -130,7 +130,8 @@
     /*Setting the sidebar button ul>li>a parameters*/
     background-color: #d7293d;
     color: #fff !important;
-    border: #d7293d 1px solid !important;
+    border: #d7293d 0.063rem solid !important;
+    font-size: 0.9rem;
 
 }
 
@@ -155,14 +156,14 @@
     /*Setting the sidebar footer parameters*/
     bottom: 0;
     position: fixed;
-    width: 280px;
+    width: 14.5rem;
 }
 
 .sidebar-footer-text {
     /*Setting the sidebar footer text parameters*/
-    font-size: 15px;
-    margin-left: 10px;
-    margin-bottom: 17px;
+    font-size: 0.9rem;
+    margin-left: 0.625rem;
+    margin-bottom: 1.063rem;
 }
 
 .page {
@@ -171,13 +172,13 @@
     height: 100%;
     width: 100%;
     z-index: -1!important;
-    padding: 0px 0px 0px 280px;
+    padding: 0rem 0rem 0rem 14.5rem;
 }
 
 .page.active {
     /*Setting the page body active parameters*/
-    left: -280px;
-    margin-right: 280px;
+    left: -14.5rem;
+    margin-right: 14.5rem;
 }
 
 .header {
@@ -185,7 +186,7 @@
     position: relative;
     background-color: #fbfbfa;
     width: 100%;    
-    border-bottom: #dcdcd3 1px solid;
+    border-bottom: #dcdcd3 0.063rem solid;
 }
 
 .header.active {
@@ -196,170 +197,14 @@
 .buttontoggler {
     /*Setting the button toggler parameters*/
     background-color: #fbfbfa;
-    padding: 10px;
+    padding: 0.625rem;
     border: none;
-    font-size: 30px;
+    font-size: 1.5rem;
     color:#d7293d;
 }
 
 body.active .sidebar {
     /*Setting the body active parameters*/
-    left: -280px;
-}
-
-.content {
-    /*Setting the content parameters*/
-    height: 100%;    
-    width: 100%;   
-    overflow: auto;
-}
-
-.content.active {    
-    /*Setting the content active parameters*/
-    margin-top: 67px;
-    position: fixed; 
-    overflow: auto;
-}
-
-.content-row {
-    background-color: #fbfbfa;
-    /*Setting the row in content parameters*/ 
-    width: 100%;
-    padding: 10px 0px 0px 30px;
-}
-
-
-.cards {
-    /*Setting the cards parameters*/
-    padding: 20px !important;
-    overflow: auto;
-
-    box-shadow: 0 0.46875rem 2.1875rem rgb(8 10 37 / 15%), 
-                0 0.9375rem 1.40625rem rgb(8 10 37 / 5%), 
-                0 0.25rem 0.53125rem rgb(8 10 37 / 5%), 
-                0 0.125rem 0.1875rem rgb(8 10 37 / 5%);
-    border-radius: 5px;
-    background-color: #fff;
-    border: 1px solid;
-    border-color: #dcdcd3 !important;
-}
-
-.title {
-    /*Setting the title cards parameters*/
-    color:#d7293d;
-    padding: 0px 0px 10px 0px;
-}
-
-.num{
-    /*Setting the number cards parameters*/
-	font-size: 2rem;
-}
-
-.card_shadow {
-    /*Setting the shadow cards parameters*/  
-    box-shadow: 0 0.46875rem 2.1875rem rgb(8 10 37 / 3%), 
-                0 0.9375rem 1.40625rem rgb(8 10 37 / 3%), 
-                0 0.25rem 0.53125rem rgb(8 10 37 / 5%), 
-                0 0.125rem 0.1875rem rgb(8 10 37 / 3%);
-}
-
-.h_shadow {	
-    /*Setting the shadow h parameters*/  
-    color: #d7293d !important;
-    font-weight: 600;
-	text-shadow: 0 0.46875rem 2.1875rem rgb(236 62 117 / 2%), 
-				0 0.9375rem 1.40625rem rgb(236 62 117  / 5%), 
-				0 0.25rem 0.53125rem rgb(236 62 117 / 10%), 
-				0 0.125rem 0.1875rem rgb(236 62 117  / 20%);
-}
-
-.info_shadow{
-    /*Setting the shadow info parameters*/ 
-	text-shadow: 0 0.46875rem 2.1875rem rgb(8 10 37 / 2%), 
- 				0 0.9375rem 1.40625rem rgb(8 10 37 / 5%), 
- 				0 0.25rem 0.53125rem rgb(8 10 37 / 30%), 
- 				0 0.125rem 0.1875rem rgb(8 10 37 / 20%) !important;
-}
-
-.span_hover_none {
-    /*Setting the span float parameters*/ 
-	color: #000 !important;
-}
-
-.label_group {
-    /*Setting the label group parameters*/ 
-	display: flex; 
-	justify-content: flex-end;
-	border-radius: 10em !important;
-	background-color: #ffebee  ;
-	color: #f44336 !important;
-    padding-left: 5px !important;
-    padding-right: 5px !important;
-}
-
-.label_shadown {
-    /*Setting the shadow label parameters*/ 
-	text-shadow: 0 0.46875rem 2.1875rem rgb(236 62 117 / 2%), 
-				0 0.9375rem 1.40625rem rgb(236 62 117  / 5%), 
-				0 0.25rem 0.53125rem rgb(236 62 117 / 10%), 
-				0 0.125rem 0.1875rem rgb(236 62 117  / 20%);	
-}
-
-.span_hover_percentual{
-    /*Setting the span float parameters*/ 
-	color: #d7293d !important;
-}
-
-.row-space{
-    /*Setting row space parameters*/ 
-    padding: 10px 0px 10px 0px;
-}
-
-.row-space-footer{
-    /*Setting footer row space parameters*/ 
-    padding: 100px 0px 0px 0px;
-}
-
-.link {
-    /*Setting link parameters*/ 
-    color: #000;
-    display: flex; 
-    justify-content: flex-end;
-    padding: 20px 0px 0px 0px;
-    text-decoration: none;
-}
-  
-.link:hover{
-    /*Setting link float parameters*/ 
-    color:#d7293d;
-}
-  
-.conta {
-    /*Setting conta parameters*/ 
-    margin-left: 80px !important;
-    margin-top: 20px !important;
-}
-
-
-/*Scroll*/
-/* Works on Firefox */
-* {
-    scrollbar-width: thin;
-    scrollbar-color: #d7293d #d7293d;
-  }
-  
-/* Works on Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
-width: 12px;
-}
-
-*::-webkit-scrollbar-track {
-background: #d7293d;
-}
-
-*::-webkit-scrollbar-thumb {
-background-color: #d7293d;
-border-radius: 20px;
-border: 3px solid #fbfbfa;
+    left: -14.5rem;
 }
 

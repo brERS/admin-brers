@@ -224,7 +224,7 @@
                 <div class="row row-space">
                     <div class="col-md-4">
                         <div class="card-body cards card_shadow col-12 card-align">
-                            <div id='main_six' class='col-12' style='height:300px; width:100%; overflow-x: hidden'>
+                            <div id='main_six' class='col-12  echarts-custom'>
                             </div>
                             <script type='text/javascript'>
 
@@ -235,12 +235,12 @@
                                 var option = {
                                     title: {
                                         left: 'center',
-                                        text: 'Processor Load'
+                                        text: 'CPU Load'
                                     },
                                     series: [
                                         {
                                             type: 'gauge',
-                                            center: ['50%', '70%'],
+                                            center: ['50%', '75%'],
                                             startAngle: 200,
                                             endAngle: -20,
                                             min: 0,
@@ -280,7 +280,7 @@
                                             axisLabel: {
                                                 distance: -20,
                                                 color: '#999',
-                                                fontSize: 20
+                                                fontSize: '1.2rem'
                                             },
                                             anchor: {
                                                 show: false
@@ -294,9 +294,9 @@
                                                 lineHeight: 40,
                                                 borderRadius: 8,
                                                 offsetCenter: [0, '-15%'],
-                                                fontSize: 25,
+                                                fontSize: '1.4rem',
                                                 fontWeight: 'bolder',
-                                                formatter: '{value}',
+                                                formatter: '{value} %',
                                                 color: 'auto'
                                             },
                                             data: [
@@ -307,7 +307,7 @@
                                         },
                                         {
                                             type: 'gauge',
-                                            center: ['50%', '70%'],
+                                            center: ['50%', '75%'],
                                             startAngle: 200,
                                             endAngle: -20,
                                             min: 0,
@@ -346,7 +346,7 @@
                                     ]
                                 };
                                 setInterval(function () {
-                                    const random = +(Math.random() * 2).toFixed(2);
+                                    const random = +(Math.random() * 20).toFixed(2);
                                     cpuload.setOption({
                                         series: [
                                             {
@@ -378,7 +378,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card-body cards card_shadow col-12 card-align">
-                            <div id='main_three' class='col-12' style='height:300px; width:100%; overflow-x: hidden'>
+                            <div id='main_three' class='col-12  echarts-custom'>
                             </div>
                             <script type='text/javascript'>
 
@@ -389,17 +389,17 @@
                                 var option = {
                                     title: {
                                         left: 'center',
-                                        text: 'CPU'
+                                        text: 'CPU Temperatura'
                                     },
                                     series: [
                                         {
                                             type: 'gauge',
-                                            center: ['50%', '70%'],
+                                            center: ['50%', '75%'],
                                             startAngle: 200,
                                             endAngle: -20,
                                             min: 0,
                                             max: 60,
-                                            splitNumber: 12,
+                                            splitNumber: 6,
                                             itemStyle: {
                                                 color: 'rgba(215, 41, 61,0.6)'
                                             },
@@ -434,7 +434,7 @@
                                             axisLabel: {
                                                 distance: -20,
                                                 color: '#999',
-                                                fontSize: 20
+                                                fontSize: '1.2rem'
                                             },
                                             anchor: {
                                                 show: false
@@ -448,7 +448,7 @@
                                                 lineHeight: 40,
                                                 borderRadius: 8,
                                                 offsetCenter: [0, '-15%'],
-                                                fontSize: 25,
+                                                fontSize: '1.4rem',
                                                 fontWeight: 'bolder',
                                                 formatter: '{value} °C',
                                                 color: 'auto'
@@ -461,7 +461,7 @@
                                         },
                                         {
                                             type: 'gauge',
-                                            center: ['50%', '70%'],
+                                            center: ['50%', '75%'],
                                             startAngle: 200,
                                             endAngle: -20,
                                             min: 0,
@@ -500,7 +500,7 @@
                                     ]
                                 };
                                 setInterval(function () {
-                                    const random = +(Math.random() * 60).toFixed(2);
+                                    const random = +(Math.random() * 60).toFixed(0);
                                     cpu.setOption({
                                         series: [
                                             {
@@ -532,7 +532,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card-body cards card_shadow col-12 card-align">
-                            <div id='main_four' class='col-12' style='height:300px; width:100%; overflow-x: hidden'>
+                            <div id='main_four' class='col-12  echarts-custom'>
                             </div>
                             <script type='text/javascript'>
 
@@ -548,7 +548,7 @@
                                     series: [
                                         {
                                             type: 'gauge',
-                                            center: ['50%', '70%'],
+                                            center: ['50%', '75%'],
                                             startAngle: 200,
                                             endAngle: -20,
                                             min: 0,
@@ -588,7 +588,7 @@
                                             axisLabel: {
                                                 distance: -20,
                                                 color: '#999',
-                                                fontSize: 20
+                                                fontSize: '1.2rem'
                                             },
                                             anchor: {
                                                 show: false
@@ -602,7 +602,7 @@
                                                 lineHeight: 40,
                                                 borderRadius: 8,
                                                 offsetCenter: [0, '-15%'],
-                                                fontSize: 25,
+                                                fontSize: '1.4rem',
                                                 fontWeight: 'bolder',
                                                 formatter: '{value} Mib',
                                                 color: 'auto'
@@ -615,7 +615,7 @@
                                         },
                                         {
                                             type: 'gauge',
-                                            center: ['50%', '70%'],
+                                            center: ['50%', '75%'],
                                             startAngle: 200,
                                             endAngle: -20,
                                             min: 0,
@@ -654,7 +654,7 @@
                                     ]
                                 };
                                 setInterval(function () {
-                                    const random = +(Math.random() * 2048).toFixed(2);
+                                    const random = +(Math.random() * 2048).toFixed(0);
                                     mem.setOption({
                                         series: [
                                             {
@@ -689,7 +689,7 @@
                 <div class="row row-space">
                     <div class="col-md-6">
                         <div class="card-body cards card_shadow col-12 card-align">
-                            <div id='main_one' class='col-12' style='height:300px; width:100%; overflow-x: hidden'>
+                            <div id='main_one' class='col-12  echarts-custom'>
                             </div>
                             <script type='text/javascript'>
                                 let base = +new Date(2022, 9, 3);
@@ -783,7 +783,7 @@
 
                     <div class="col-md-6">
                         <div class="card-body cards card_shadow col-12 card-align">
-                            <div id='main_two' class='col-12' style='height:300px; width:100%; overflow-x: hidden'>
+                            <div id='main_two' class='col-12  echarts-custom'>
                             </div>
                             <script type='text/javascript'>
                                 let basetwo = +new Date(2022, 9, 3);

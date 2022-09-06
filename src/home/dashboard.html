@@ -210,7 +210,7 @@
                 <div class="row row-space">
                     <div class="col-md-6">
                         <div class="card-body cards card_shadow col-12 card-align">
-                            <div id='main_one' class='col-12' style='height:300px; width:100%; overflow-x: hidden'>
+                            <div id='main_one' class='col-12 echarts-custom'>
                             </div>
                             <script type='text/javascript'>
 
@@ -224,7 +224,8 @@
                                         text: 'BNGs Total de clientes por vendor',
                                         left: 'center',
                                         textStyle: {
-                                            color: '#d7293d'
+                                            color: '#d7293d',
+                                            fontSize: '1.1rem'
                                         }
                                     },
                                     dataset: {
@@ -261,7 +262,7 @@
 
                     <div class="col-md-6">
                         <div class="card-body cards card_shadow col-12 card-align">
-                            <div id='main_two' class='col-12' style='height:300px; width:100%; overflow-x: hidden'>
+                            <div id='main_two' class='col-12 echarts-custom'>
                             </div>
                             <script type='text/javascript'>
 
@@ -275,7 +276,8 @@
                                         text: 'OLTs Total de clientes por vendor',
                                         left: 'center',
                                         textStyle: {
-                                            color: '#d7293d'
+                                            color: '#d7293d',
+                                            fontSize: '1.1rem'
                                         }
                                     },
                                     dataset: {
@@ -313,7 +315,7 @@
                 <div class="row row-space">
                     <div class="col-md-6">
                         <div class="card-body cards card_shadow col-12 card-align">
-                            <div id='main_three' class='col-12' style='height:300px; width:100%; overflow-x: hidden'>
+                            <div id='main_three' class='col-12 echarts-custom'>
                             </div>
                             <script type='text/javascript'>
                                 // Initialize the echarts instance based on the prepared dom
@@ -325,8 +327,10 @@
                                     color: ['#d7293d', '#ffc107', '#adb5bd'],
                                     title: {
                                         text: 'Total de BNGs por região',
+                                        left: 'center',
                                         textStyle: {
-                                            color: '#d7293d'
+                                            color: '#d7293d',
+                                            fontSize: '1.1rem'
                                         }
                                     },
                                     tooltip: {
@@ -336,12 +340,14 @@
                                         }
                                     },
                                     legend: {
-                                        left: 'right'
+                                        bottom: 0,
+                                        left: 'center'
                                     },
                                     grid: {
+                                        top: '13%',
                                         left: '3%',
                                         right: '4%',
-                                        bottom: '3%',
+                                        bottom: '11%',
                                         containLabel: true
                                     },
                                     xAxis: {
@@ -393,7 +399,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="card-body cards card_shadow col-12 card-align">
-                            <div id='main_four' class='col-12' style='height:300px; width:100%; overflow-x: hidden'>
+                            <div id='main_four' class='col-12 echarts-custom'>
                             </div>
                             <script type='text/javascript'>
                                 // Initialize the echarts instance based on the prepared dom
@@ -405,8 +411,10 @@
                                     color: ['#d7293d', '#ffc107', '#adb5bd'],
                                     title: {
                                         text: 'Total de cliente por BNGs e região',
+                                        left: 'center',
                                         textStyle: {
-                                            color: '#d7293d'
+                                            color: '#d7293d',
+                                            fontSize: '1.1rem'
                                         }
                                     },
                                     tooltip: {
@@ -416,12 +424,14 @@
                                         }
                                     },
                                     legend: {
-                                        left: 'right'
+                                        bottom: 0,
+                                        left: 'center'
                                     },
                                     grid: {
+                                        top: '13%',
                                         left: '3%',
                                         right: '4%',
-                                        bottom: '3%',
+                                        bottom: '11%',
                                         containLabel: true
                                     },
                                     xAxis: {
@@ -478,7 +488,7 @@
                 <div class="row row-space">
                     <div class="col-md-12">
                         <div class="card-body cards card_shadow col-12 card-align">
-                            <div id='main_five' class='col-12' style='height:300px; width:100%; overflow-x: hidden'>
+                            <div id='main_five' class='col-12 echarts-custom'>
                             </div>
                             <script type='text/javascript'>
                                 // Initialize the echarts instance based on the prepared dom
@@ -492,7 +502,8 @@
                                         text: 'Total de cliente por Repetidor',
                                         left: 'center',
                                         textStyle: {
-                                            color: '#d7293d'
+                                            color: '#d7293d',
+                                            fontSize: '1.1rem'
                                         }
                                     },
                                     dataset: [
