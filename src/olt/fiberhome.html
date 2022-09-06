@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Portfólio - OLTs Fiberhome</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfólio do brERS HTML, CSS e JS">
+    <meta name="keywords" content="html, css, js, site, brERS">
+    <meta name="robots" content="index">
+
+    <!--CSS e JS custom-->
+    <link href="../../assets/css/nav_custom.css" rel="stylesheet">
+    <link href="../../assets/css/utils.css" rel="stylesheet">
+    <link href="../../assets/css/datatables_custom.css" rel="stylesheet">
+    <script src="../../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../../assets/js/countup.js"></script>
+    <script src="../../assets/js/table.js"></script>
+
+    <!--CSS e JS Bootstrap-->
+    <link href="../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Icones table -->
+    <link rel='stylesheet' type='text/css'
+        href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- CSS e JS do DataTables -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css">
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.1/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.1/js/buttons.bootstrap5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.1/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.1/js/buttons.print.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.1/js/buttons.colVis.min.js"></script>
+
+</head>
+
+<body>
+    <div class="offcanvas-lg sidebar">
+
+        <div class="sidebar-img-background">
+            <div class='sidebar-background-color-opacity'>
+                <div class="offcanvas-body sidebar-body">
+                    <div class="sidebar-body">
+                        <div class="sidebar-header">
+                            <i class="bx bx-home sidebar-header-icons"></i>
+                            <a class="sidebar-header-span" href="../home/index.html">brERS</a>
+                        </div>
+                        <hr>
+                        <div class="dropdown sidebar-dropdown-div">
+                            <a class="sidebar-btn" type="button" href="../home/dashboard.html">
+                                <div class="row col-12">
+                                    <div class="col-1">
+                                        <i class="bx bx-bar-chart-square sidebar-btn-icons"></i>
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="sidebar-btn-span"> Dashboard </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="dropdown sidebar-dropdown-div">
+                            <button class="sidebar-btn" type="button" data-bs-toggle="dropdown">
+                                <div class="row col-12">
+                                    <div class="col-1">
+                                        <i class="bx bx-hdd sidebar-btn-icons"></i>
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="sidebar-btn-span"> BNG's </span>
+                                    </div>
+                                    <div class="col-1">
+                                        <i class="bx bx-chevron-right sidebar-btn-icon-arrow"></i>
+                                    </div>
+                                </div>
+                            </button>
+                            <ul class="dropdown-menu sidebar-btn-ul">
+                                <li><a class="dropdown-item sidebar-li-a" href="../bng/huawei.html">Huawei</a></li>
+                                <li><a class="dropdown-item sidebar-li-a" href="../bng/juniper.html">Juniper</a></li>
+                                <li><a class="dropdown-item sidebar-li-a" href="../bng/mikrotik.html">Mikrotik</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown sidebar-dropdown-div">
+                            <button class="sidebar-btn" type="button" data-bs-toggle="dropdown">
+                                <div class="row col-12">
+                                    <div class="col-1">
+                                        <i class="bx bx-data sidebar-btn-icons"></i>
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="sidebar-btn-span"> CDN's </span>
+                                    </div>
+                                    <div class="col-1">
+                                        <i class="bx bx-chevron-right sidebar-btn-icon-arrow"></i>
+                                    </div>
+                                </div>
+                            </button>
+                            <ul class="dropdown-menu sidebar-btn-ul">
+                                <li><a class="dropdown-item sidebar-li-a" href="../cdn/facebook.html">Facebook</a></li>
+                                <li><a class="dropdown-item sidebar-li-a" href="../cdn/netflix.html">Netflix</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown sidebar-dropdown-div">
+                            <a class="sidebar-btn" type="button" href="../home/monitoramento.html">
+                                <div class="row col-12">
+                                    <div class="col-1">
+                                        <i class="bx bx-desktop sidebar-btn-icons"></i>
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="sidebar-btn-span"> Monitoramento </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="dropdown sidebar-dropdown-div">
+                            <button class="sidebar-btn" type="button" data-bs-toggle="dropdown">
+                                <div class="row col-12">
+                                    <div class="col-1">
+                                        <i class="bx bx-server sidebar-btn-icons"></i>
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="sidebar-btn-span"> OLT's </span>
+                                    </div>
+                                    <div class="col-1">
+                                        <i class="bx bx-chevron-right sidebar-btn-icon-arrow"></i>
+                                    </div>
+                                </div>
+                            </button>
+                            <ul class="dropdown-menu sidebar-btn-ul">
+                                <li>
+                                    <a class="dropdown-item sidebar-li-a" href="#">Fiberhome</a>
+                                </li>
+                                <li><a class="dropdown-item sidebar-li-a" href="olt_huawei.html">Huawei</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown sidebar-dropdown-div">
+                            <a class="sidebar-btn" type="button" href="../repetidores/repetidores.html">
+                                <div class="row col-12">
+                                    <div class="col-1">
+                                        <i class="bx bx-wifi sidebar-btn-icons"></i>
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="sidebar-btn-span"> Repetidores </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="dropdown sidebar-dropdown-div">
+                            <a class="sidebar-btn" type="button" href="../inventario/inventario.html">
+                                <div class="row col-12">
+                                    <div class="col-1">
+                                        <i class="bx bx-calendar-edit sidebar-btn-icons"></i>
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="sidebar-btn-span"> Inventário </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="sidebar-footer">
+                            <hr>
+                            <div class="sidebar-footer-text">Copyright © &nbsp;&nbsp; brERS 2022</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page" id="page">
+
+        <div class="header" id="header">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-10">
+                        <button id="sidebarToggle" class="buttontoggler sidebarToggle" type="button">
+                            <span class="bx bx-menu"></span>
+                        </button>
+                    </div>
+
+                    <div class="dropdown col-2">
+                        <a class="link" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            BR ERS &nbsp
+                            <img src="https://img.icons8.com/ios-glyphs/90/000000/user-male-circle.png"
+                                class="rounded-circle" height="25" loading="lazy" />
+                        </a>
+                        <ul class="dropdown-menu conta" aria-labelledby="dropdownMenuLink">
+                            <li>
+                                <a class="dropdown-item" href="../conta/gerenciar.html">
+                                    <i class='bx bx-cog'></i> Gerenciar Conta
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class='bx bx-exit'></i> Sair
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="content" class="content">
+            <div class="row content-row">
+                <div class="row title">
+                    <h1>OLTs Fiberhome</h1>
+                </div>
+                <div class="row row-space">
+                    <div class="col-md-3">
+                        <div class="card-body cards card_shadow col-12">
+                            <div class="input-group">
+                                <h5 class="col-12 h_shadow">BCA</h5>
+                            </div>
+                            <hr>
+                            <span class="card-text num info_shadow col-12 counter-up span_hover_none"
+                                data-count-to="37842">37.842</span>
+                            <div class="input-group">
+                                <label class="col-9 info_shadow">Quantidade Total Clientes </label>
+                                <label class="label_group label_shadown">
+                                    <span class="counter-up span_hover_percentual" data-count-to="43">43</span>
+                                    ,
+                                    <span class="counter-up span_hover_percentual" data-count-to="49">49</span>
+                                    %
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card-body cards card_shadow col-12">
+                            <div class="input-group">
+                                <h5 class="col-12 h_shadow">BHE</h5>
+                            </div>
+                            <hr>
+                            <span class="card-text num info_shadow col-12 counter-up span_hover_none"
+                                data-count-to="13384">13.384</span>
+                            <div class="input-group">
+                                <label class="col-9 info_shadow">Quantidade Total Clientes </label>
+                                <label class="label_group label_shadown">
+                                    <span class="counter-up span_hover_percentual" data-count-to="15">15</span>
+                                    ,
+                                    <span class="counter-up span_hover_percentual" data-count-to="38">38</span>
+                                    %
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card-body cards card_shadow col-12">
+                            <div class="input-group">
+                                <h5 class="col-12 h_shadow">CNL</h5>
+                            </div>
+                            <hr>
+                            <span class="card-text num info_shadow col-12 counter-up span_hover_none"
+                                data-count-to="31094">31.094</span>
+                            <div class="input-group">
+                                <label class="col-9 info_shadow">Quantidade Total Clientes </label>
+                                <label class="label_group label_shadown">
+                                    <span class="counter-up span_hover_percentual" data-count-to="35">35</span>
+                                    ,
+                                    <span class="counter-up span_hover_percentual" data-count-to="73">73</span>
+                                    %
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card-body cards card_shadow col-12">
+                            <div class="input-group">
+                                <h5 class="col-12 h_shadow">JFA</h5>
+                            </div>
+                            <hr>
+                            <span class="card-text num info_shadow col-12 counter-up span_hover_none"
+                                data-count-to="4700">4.700</span>
+                            <div class="input-group">
+                                <label class="col-9 info_shadow">Quantidade Total Clientes </label>
+                                <label class="label_group label_shadown">
+                                    <span class="counter-up span_hover_percentual" data-count-to="5">5</span>
+                                    ,
+                                    <span class="counter-up span_hover_percentual" data-count-to="40">40</span>
+                                    %
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-space">
+                    <div class="col-md-3">
+                        <div class="card card-align">
+                            <div class="card-header h_shadow">
+                                BCA Status OLTs
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <span class="col-6">BCAFBAN60001701</span>
+                                        <span class="col-3">OK</span>
+                                        <span class="col-3">3ms</span>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <span class="col-6">BCAFBAN55160101</span>
+                                        <span class="col-3">OK</span>
+                                        <span class="col-3">11ms</span>
+                                    </div>
+                                </li>
+                                <li class="list-group-item text-bg-danger">
+                                    <div class="row">
+                                        <span class="col-6">BCAFBAN55160102</span>
+                                        <span class="col-3">ERROR</span>
+                                        <span class="col-3">N/A</span>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <span class="col-6">BCAFBAN60001702</span>
+                                        <span class="col-3">OK</span>
+                                        <span class="col-3">7ms</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card card-align">
+                            <div class="card-header h_shadow">
+                                BHE Status OLTs
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <span class="col-6">BHEFBAN55160102</span>
+                                        <span class="col-3">OK</span>
+                                        <span class="col-3">3ms</span>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <span class="col-6">BHEFBAN55160101</span>
+                                        <span class="col-3">OK</span>
+                                        <span class="col-3">11ms</span>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">&nbsp;
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card card-align">
+                            <div class="card-header h_shadow">
+                                CNL Status OLTs
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <span class="col-6">CNLFBAN55160102</span>
+                                        <span class="col-3">OK</span>
+                                        <span class="col-3">7ms</span>
+                                    </div>
+                                </li>
+                                <li class="list-group-item text-bg-warning">
+                                    <div class="row">
+                                        <span class="col-6">CNLFBAN60001702</span>
+                                        <span class="col-3">WARN</span>
+                                        <span class="col-3">526ms</span>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <span class="col-6">CNLFBAN60001702</span>
+                                        <span class="col-3">OK</span>
+                                        <span class="col-3">5ms</span>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">&nbsp;
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card card-align">
+                            <div class="card-header h_shadow">
+                                JFA Status OLTs
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <span class="col-6">JFAFBAN55160101</span>
+                                        <span class="col-3">OK</span>
+                                        <span class="col-3">5ms</span>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">&nbsp;
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-space">
+                    <div class="col-md-3">
+
+                        <div class="card-body cards card_shadow col-12 card-align">
+                            <div class="row h_shadow title-table">
+                                <h4>Recomendação OLTs</h4>
+                            </div>
+                            <br />
+                            <div class="text-bg-light">
+                                <p class="ps">Limite de ONTs recomendado por tipo de controladora.</p>
+                                <li class="li-ps"><span class='title-ps'>HSUA:</span> 5000 ONTs.</li>
+                                <li class="li-ps"><span class='title-ps'>HSUB:</span> 5000 ONTs.</li>
+                                <li class="li-ps"><span class='title-ps'>HSWA:</span> 5000 ONTs.</li>
+                                <li class="li-ps"><span class='title-ps'>HSWD:</span> 15000 ONTs.</li>
+                                <li class="li-ps"><span class='title-ps'>HSWD:</span> 15000 ONTs.</li>
+                            </div>
+                            <br />
+                            <div class="text-bg-light">
+                                <p class="ps">Legenda</p>
+                                <li class="li-ps text-bg-warning">
+                                    <span class='title-ps'>LINHAS AMARELAS:</span>
+                                    OLTs cujo número de ONTs está próximo a capacidade recomendada.
+                                </li>
+                                <br />
+                                <li class="li-ps text-bg-danger">
+                                    <span class='title-ps'>LINHAS VERMELHAS:</span>
+                                    OLTs cujo número de ONTs ultrapassa a capacidade recomendada.
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body cards card_shadow col-12 card-align">
+                            <div class="row h_shadow title-table">
+                                <h4>Lista de OLTs</h4>
+                            </div>
+
+                            <table id="table_id" class="table table-striped table-bordered" class="display">
+                                <thead>
+                                    <tr>
+                                        <th>Cidade</th>
+                                        <th>Hostname</th>
+                                        <th>Modelo</th>
+                                        <th>Controladora</th>
+                                        <th>Firmware</th>
+                                        <th>Nº Clientes</th>
+                                        <th>OUT</th>
+                                        <th>IN</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>BCA</td>
+                                        <td>BCAFBAN60001701</td>
+                                        <td>An6000-17</td>
+                                        <td>HSCA</td>
+                                        <td>RP1300</td>
+                                        <td>9729</td>
+                                        <td>7.13Gib</td>
+                                        <td>3.78Gib</td>
+                                    </tr>
+                                    <tr class="text-bg-danger">
+                                        <td>BCA</td>
+                                        <td>BCAFBAN55160101</td>
+                                        <td>An5516-01</td>
+                                        <td>HSWA</td>
+                                        <td>RP1200</td>
+                                        <td>6192</td>
+                                        <td>4.67Gib</td>
+                                        <td>2.13Gib</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BCA</td>
+                                        <td>BCAFBAN55160102</td>
+                                        <td>An5516-01</td>
+                                        <td>HSWD</td>
+                                        <td>RP1200</td>
+                                        <td>7192</td>
+                                        <td>5.69Gib</td>
+                                        <td>2.66Gib</td>
+                                    </tr>
+                                    <tr class="text-bg-warning">
+                                        <td>BCA</td>
+                                        <td>BCAFBAN60001702</td>
+                                        <td>An6000-17</td>
+                                        <td>HSCA</td>
+                                        <td>RP1300</td>
+                                        <td>14729</td>
+                                        <td>8.95Gib</td>
+                                        <td>5.24Gib</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BHE</td>
+                                        <td>BHEFBAN55160102</td>
+                                        <td>An5516-01</td>
+                                        <td>HSWD</td>
+                                        <td>RP1200</td>
+                                        <td>7192</td>
+                                        <td>6.01Gib</td>
+                                        <td>2.18Gib</td>
+                                    </tr>
+                                    <tr class="text-bg-danger">
+                                        <td>BHE</td>
+                                        <td>BHEFBAN55160101</td>
+                                        <td>An5516-01</td>
+                                        <td>HSWA</td>
+                                        <td>RP1200</td>
+                                        <td>6192</td>
+                                        <td>5.29Gib</td>
+                                        <td>2.09Gib</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CNL</td>
+                                        <td>CNLFBAN55160102</td>
+                                        <td>An5516-01</td>
+                                        <td>HSWD</td>
+                                        <td>RP1200</td>
+                                        <td>7192</td>
+                                        <td>4.89Gib</td>
+                                        <td>2.63Gib</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CNL</td>
+                                        <td>CNLFBAN60001702</td>
+                                        <td>An6000-17</td>
+                                        <td>HSCA</td>
+                                        <td>RP1300</td>
+                                        <td>12936</td>
+                                        <td>7.93Gib</td>
+                                        <td>4.62Gib</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CNL</td>
+                                        <td>CNLFBAN60001702</td>
+                                        <td>An6000-17</td>
+                                        <td>HSCA</td>
+                                        <td>RP1300</td>
+                                        <td>10966</td>
+                                        <td>6.23Gib</td>
+                                        <td>3.62Gib</td>
+                                    </tr>
+                                    <tr class="text-bg-warning">
+                                        <td>JFA</td>
+                                        <td>JFAFBAN55160101</td>
+                                        <td>An5516-01</td>
+                                        <td>HSWA</td>
+                                        <td>RP1200</td>
+                                        <td>4700</td>
+                                        <td>2.56Gib</td>
+                                        <td>1.23Gib</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-space">
+                    <div class="col-md-3">
+
+                        <div class="card-body cards card_shadow col-12 card-align">
+                            <div class="row h_shadow title-table">
+                                <h4>Recomendação Cards</h4>
+                            </div>
+                            <br />
+                            <div class="text-bg-light">
+                                <p class="ps">Limite de ONTs recomendado por tipo de card.</p>
+                                <li class="li-ps"><span class='title-ps'>EC8B:</span> 250 ONTs.</li>
+                                <li class="li-ps"><span class='title-ps'>GC8B:</span> 500 ONTs.</li>
+                                <li class="li-ps"><span class='title-ps'>GCOB:</span> 800 ONTs.</li>
+                                <li class="li-ps"><span class='title-ps'>GPOA:</span> 1000 ONTs.</li>
+                            </div>
+                            <br />
+                            <div class="text-bg-light">
+                                <p class="ps">Legenda</p>
+                                <li class="li-ps text-bg-warning">
+                                    <span class='title-ps'>LINHAS AMARELAS:</span>
+                                    Cards cujo número de ONTs está próximo a capacidade recomendada.
+                                </li>
+                                <br />
+                                <li class="li-ps text-bg-danger">
+                                    <span class='title-ps'>LINHAS VERMELHAS:</span>
+                                    Cards cujo número de ONTs ultrapassa a capacidade recomendada.
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body cards card_shadow col-12 card-align">
+                            <div class="row h_shadow title-table">
+                                <h4>Lista de Cards</h4>
+                            </div>
+
+                            <table id="table_id_three" class="table table-striped table-bordered" class="display">
+                                <thead>
+                                    <tr>
+                                        <th>Hostname</th>
+                                        <th>Tipo</th>
+                                        <th>Slot</th>
+                                        <th>Nº Clientes</th>
+                                        <th>OUT</th>
+                                        <th>IN</th>
+                                        <th>Capacity</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="text-bg-warning">
+                                        <td>BCAFBAN55160102</td>
+                                        <td>EC8B</td>
+                                        <td>1</td>
+                                        <td>240</td>
+                                        <td>135Mib</td>
+                                        <td>54Mib</td>
+                                        <td>Warning</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BCAFBAN55160102</td>
+                                        <td>GC8B</td>
+                                        <td>2</td>
+                                        <td>389</td>
+                                        <td>432Mib</td>
+                                        <td>187Mib</td>
+                                        <td>OK</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BCAFBAN55160102</td>
+                                        <td>EC8B</td>
+                                        <td>3</td>
+                                        <td>200</td>
+                                        <td>265Mib</td>
+                                        <td>142Mib</td>
+                                        <td>OK</td>
+                                    </tr>
+                                    <tr class="text-bg-danger">
+                                        <td>BCAFBAN55160102</td>
+                                        <td>GC8B</td>
+                                        <td>4</td>
+                                        <td>678</td>
+                                        <td>685Mib</td>
+                                        <td>346Mib</td>
+                                        <td>Danger</td>
+                                    </tr>
+                                    <tr class="text-bg-warning">
+                                        <td>BCAFBAN55160102</td>
+                                        <td>GC8B</td>
+                                        <td>5</td>
+                                        <td>490</td>
+                                        <td>578Mib</td>
+                                        <td>243Mib</td>
+                                        <td>Warning</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BCAFBAN55160102</td>
+                                        <td>GC8B</td>
+                                        <td>6</td>
+                                        <td>389</td>
+                                        <td>387Mib</td>
+                                        <td>195Mib</td>
+                                        <td>OK</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BCAFBAN55160102</td>
+                                        <td>EC8B</td>
+                                        <td>7</td>
+                                        <td>200</td>
+                                        <td>183Mib</td>
+                                        <td>93Mib</td>
+                                        <td>OK</td>
+                                    </tr>
+                                    <tr class="text-bg-danger">
+                                        <td>BCAFBAN55160102</td>
+                                        <td>GCOB</td>
+                                        <td>8</td>
+                                        <td>1553</td>
+                                        <td>883Mib</td>
+                                        <td>498Mib</td>
+                                        <td>Danger</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BCAFBAN55160102</td>
+                                        <td>GCOB</td>
+                                        <td>11</td>
+                                        <td>710</td>
+                                        <td>514Mib</td>
+                                        <td>231Mib</td>
+                                        <td>OK</td>
+                                    </tr>
+                                    <tr class="text-bg-danger">
+                                        <td>BCAFBAN55160102</td>
+                                        <td>EC8B</td>
+                                        <td>12</td>
+                                        <td>362</td>
+                                        <td>215Mib</td>
+                                        <td>89Mib</td>
+                                        <td>Danger</td>
+                                    </tr>
+                                    <tr class="text-bg-warning">
+                                        <td>BCAFBAN55160102</td>
+                                        <td>GCOB</td>
+                                        <td>13</td>
+                                        <td>790</td>
+                                        <td>595Mib</td>
+                                        <td>197Mib</td>
+                                        <td>Warning</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BCAFBAN55160102</td>
+                                        <td>GCOB</td>
+                                        <td>14</td>
+                                        <td>710</td>
+                                        <td>479Mib</td>
+                                        <td>248Mib</td>
+                                        <td>OK</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BCAFBAN55160102</td>
+                                        <td>EC8B</td>
+                                        <td>15</td>
+                                        <td>187</td>
+                                        <td>97Mib</td>
+                                        <td>34Mib</td>
+                                        <td>OK</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BCAFBAN55160102</td>
+                                        <td>GC8B</td>
+                                        <td>16</td>
+                                        <td>294</td>
+                                        <td>246Mib</td>
+                                        <td>109Mib</td>
+                                        <td>OK</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-space">
+                    <div class="col-md-3">
+
+                        <div class="card-body cards card_shadow col-12 card-align">
+                            <div class="row h_shadow title-table">
+                                <h4>Recomendação PONs</h4>
+                            </div>
+                            <br />
+                            <div class="text-bg-light">
+                                <p class="ps">Limite de ONTs recomendado por tipo de card/pon.</p>
+                                <li class="li-ps"><span class='title-ps'>EC8B:</span> 31 ONTs.</li>
+                                <li class="li-ps"><span class='title-ps'>GC8B:</span> 62 ONTs.</li>
+                                <li class="li-ps"><span class='title-ps'>GCOB:</span> 50 ONTs.</li>
+                                <li class="li-ps"><span class='title-ps'>GPOA:</span> 62 ONTs.</li>
+                            </div>
+                            <br />
+                            <div class="text-bg-light">
+                                <p class="ps">Nível de sinal com diferença maior que -8db entre o melhor e o pior sinal
+                                    dentre as ONTs de uma PON pode gerar problemas para todas ONTs da PON.</p>
+                            </div>
+                            <br />
+                            <div class="text-bg-light">
+                                <p class="ps">Legenda</p>
+                                <li class="li-ps text-bg-warning">
+                                    <span class='title-ps'>LINHAS AMARELAS:</span>
+                                    Pons cujo nível de sinal está próximo do recomendado.
+                                </li>
+                                <br />
+                                <li class="li-ps text-bg-danger">
+                                    <span class='title-ps'>LINHAS VERMELHAS:</span>
+                                    Pons cujo nível de sinal ultrapassa do recomendado.
+                                </li>
+                            </div>
+                            <br />
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body cards card_shadow col-12 card-align">
+                            <div class="row h_shadow title-table">
+                                <h4>Lista de PONs</h4>
+                            </div>
+
+                            <table id="table_id_four" class="table table-striped table-bordered" class="display">
+                                <thead>
+                                    <tr>
+                                        <th>Hostname</th>
+                                        <th>Tipo</th>
+                                        <th>Slot</th>
+                                        <th>Pon</th>
+                                        <th>Nº Clientes</th>
+                                        <th>Menor TX</th>
+                                        <th>Maior TX</th>
+                                        <th>Diferença</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>BCAFBAN55160102</td>
+                                        <td>GC8B</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>42</td>
+                                        <td>-23,67</td>
+                                        <td>-18,79</td>
+                                        <td>-5</td>
+                                    </tr>
+                                    <tr class="text-bg-danger">
+                                        <td>BCAFBAN55160102</td>
+                                        <td>GC8B</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td>50</td>
+                                        <td>-36,98</td>
+                                        <td>-17,85</td>
+                                        <td>-19</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BCAFBAN55160102</td>
+                                        <td>GC8B</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>35</td>
+                                        <td>-23,97</td>
+                                        <td>-21,93</td>
+                                        <td>-2</td>
+                                    </tr>
+                                    <tr class="text-bg-danger">
+                                        <td>BCAFBAN55160102</td>
+                                        <td>GC8B</td>
+                                        <td>2</td>
+                                        <td>4</td>
+                                        <td>32</td>
+                                        <td>-25,45</td>
+                                        <td>-14,78</td>
+                                        <td>-11</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BCAFBAN55160102</td>
+                                        <td>GC8B</td>
+                                        <td>2</td>
+                                        <td>5</td>
+                                        <td>84</td>
+                                        <td>-24,22</td>
+                                        <td>-23,09</td>
+                                        <td>-1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BCAFBAN55160102</td>
+                                        <td>GC8B</td>
+                                        <td>2</td>
+                                        <td>6</td>
+                                        <td>37</td>
+                                        <td>-12,21</td>
+                                        <td>-11,87</td>
+                                        <td>-1</td>
+                                    </tr>
+                                    <tr class="text-bg-warning">
+                                        <td>BCAFBAN55160102</td>
+                                        <td>GC8B</td>
+                                        <td>2</td>
+                                        <td>7</td>
+                                        <td>55</td>
+                                        <td>-25,54</td>
+                                        <td>-17,18</td>
+                                        <td>-8</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BCAFBAN55160102</td>
+                                        <td>GCOB</td>
+                                        <td>2</td>
+                                        <td>8</td>
+                                        <td>54</td>
+                                        <td>-13,21</td>
+                                        <td>-11,87</td>
+                                        <td>-2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BCAFBAN55160102</td>
+                                        <td>GC8B</td>
+                                        <td>3</td>
+                                        <td>1</td>
+                                        <td>42</td>
+                                        <td>-25,12</td>
+                                        <td>-18,79</td>
+                                        <td>-7</td>
+                                    </tr>
+                                    <tr class="text-bg-danger">
+                                        <td>BCAFBAN55160102</td>
+                                        <td>GC8B</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>50</td>
+                                        <td>-36,98</td>
+                                        <td>-17,85</td>
+                                        <td>-19</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-space">
+                    <div class="col-md-3">
+
+                        <div class="card-body cards card_shadow col-12 card-align">
+                            <div class="row h_shadow title-table">
+                                <h4>Recomendação ONTs</h4>
+                            </div>
+                            <br />
+                            <div class="text-bg-light">
+                                <p class="ps">É recomendado que o nível de sinal das ONTs de uma PON esteja maior que
+                                    -27db</p>
+                            </div>
+                            <br />
+                            <div class="text-bg-light">
+                                <p class="ps">Legenda</p>
+                                <li class="li-ps text-bg-warning">
+                                    <span class='title-ps'>LINHAS AMARELAS:</span>
+                                    ONTs cujo nível de sinal está próximo do recomendado.
+                                </li>
+                                <br />
+                                <li class="li-ps text-bg-danger">
+                                    <span class='title-ps'>LINHAS VERMELHAS:</span>
+                                    ONTs cujo nível de sinal ultrapassa do recomendado.
+                                </li>
+                            </div>
+                            <br />
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body cards card_shadow col-12 card-align">
+                            <div class="row h_shadow title-table">
+                                <h4>Lista de ONTs</h4>
+                            </div>
+
+                            <table id="table_id_five" class="table table-striped table-bordered" class="display">
+                                <thead>
+                                    <tr>
+                                        <th>Hostname</th>
+                                        <th>Tipo</th>
+                                        <th>Slot</th>
+                                        <th>Pon</th>
+                                        <th>ONTID</th>
+                                        <th>TX</th>
+                                        <th>RX</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>BCAFBAN55160102</td>
+                                        <td>GC8B</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>-23,67</td>
+                                        <td>-2,79</td>
+                                    </tr>
+                                    <tr class="text-bg-danger">
+                                        <td>BCAFBAN55160102</td>
+                                        <td>GC8B</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>-36,98</td>
+                                        <td>-2,85</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BCAFBAN55160102</td>
+                                        <td>GC8B</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>3</td>
+                                        <td>-23,97</td>
+                                        <td>-1,93</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BCAFBAN55160102</td>
+                                        <td>GC8B</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>4</td>
+                                        <td>-25,45</td>
+                                        <td>-1,78</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BCAFBAN55160102</td>
+                                        <td>GC8B</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>5</td>
+                                        <td>-24,22</td>
+                                        <td>-3,09</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BCAFBAN55160102</td>
+                                        <td>GC8B</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>6</td>
+                                        <td>-12,21</td>
+                                        <td>-1,87</td>
+                                    </tr>
+                                    <tr class="text-bg-warning">
+                                        <td>BCAFBAN55160102</td>
+                                        <td>GC8B</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>7</td>
+                                        <td>-26,54</td>
+                                        <td>-3,18</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BCAFBAN55160102</td>
+                                        <td>GCOB</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>8</td>
+                                        <td>-13,21</td>
+                                        <td>-1,87</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BCAFBAN55160102</td>
+                                        <td>GC8B</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>9</td>
+                                        <td>-25,12</td>
+                                        <td>-1,79</td>
+                                    </tr>
+                                    <tr class="text-bg-danger">
+                                        <td>BCAFBAN55160102</td>
+                                        <td>GC8B</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>10</td>
+                                        <td>-36,98</td>
+                                        <td>-1,85</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-space-footer"></div>
+
+            </div>
+        </div>
+
+    </div>
+    <script src="../../assets/js/nav.js"></script>
+</body>
+
+</html>

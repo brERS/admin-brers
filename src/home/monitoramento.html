@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Portfólio - Monitoramento</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfólio do brERS HTML, CSS e JS">
+    <meta name="keywords" content="html, css, js, site, brERS">
+    <meta name="robots" content="index">
+
+    <!--CSS e JS custom-->
+    <link href="../../assets/css/nav_custom.css" rel="stylesheet">
+    <link href="../../assets/css/utils.css" rel="stylesheet">
+    <link href="../../assets/css/datatables_custom.css" rel="stylesheet">
+    <script src="../../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../../assets/js/countup.js"></script>
+    <script src="../../assets/js/table.js"></script>
+
+    <!--CSS e JS Bootstrap-->
+    <link href="../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Icones table -->
+    <link rel='stylesheet' type='text/css'
+        href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- CSS e JS do DataTables -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css">
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.1/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.1/js/buttons.bootstrap5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.1/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.1/js/buttons.print.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.1/js/buttons.colVis.min.js"></script>
+
+</head>
+
+<body>
+    <div class="offcanvas-lg sidebar">
+
+        <div class="sidebar-img-background">
+            <div class='sidebar-background-color-opacity'>
+                <div class="offcanvas-body sidebar-body">
+                    <div class="sidebar-body">
+                        <div class="sidebar-header">
+                            <i class="bx bx-home sidebar-header-icons"></i>
+                            <a class="sidebar-header-span" href="../home/index.html">brERS</a>
+                        </div>
+                        <hr>
+                        <div class="dropdown sidebar-dropdown-div">
+                            <a class="sidebar-btn" type="button" href="../home/dashboard.html">
+                                <div class="row col-12">
+                                    <div class="col-1">
+                                        <i class="bx bx-bar-chart-square sidebar-btn-icons"></i>
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="sidebar-btn-span"> Dashboard </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="dropdown sidebar-dropdown-div">
+                            <button class="sidebar-btn" type="button" data-bs-toggle="dropdown">
+                                <div class="row col-12">
+                                    <div class="col-1">
+                                        <i class="bx bx-hdd sidebar-btn-icons"></i>
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="sidebar-btn-span"> BNG's </span>
+                                    </div>
+                                    <div class="col-1">
+                                        <i class="bx bx-chevron-right sidebar-btn-icon-arrow"></i>
+                                    </div>
+                                </div>
+                            </button>
+                            <ul class="dropdown-menu sidebar-btn-ul">
+                                <li><a class="dropdown-item sidebar-li-a" href="../bng/huawei.html">Huawei</a></li>
+                                <li><a class="dropdown-item sidebar-li-a" href="../bng/juniper.html">Juniper</a></li>
+                                <li><a class="dropdown-item sidebar-li-a" href="../bng/mikrotik.html">Mikrotik</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown sidebar-dropdown-div">
+                            <button class="sidebar-btn" type="button" data-bs-toggle="dropdown">
+                                <div class="row col-12">
+                                    <div class="col-1">
+                                        <i class="bx bx-data sidebar-btn-icons"></i>
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="sidebar-btn-span"> CDN's </span>
+                                    </div>
+                                    <div class="col-1">
+                                        <i class="bx bx-chevron-right sidebar-btn-icon-arrow"></i>
+                                    </div>
+                                </div>
+                            </button>
+                            <ul class="dropdown-menu sidebar-btn-ul">
+                                <li><a class="dropdown-item sidebar-li-a" href="../cdn/facebook.html">Facebook</a></li>
+                                <li><a class="dropdown-item sidebar-li-a" href="../cdn/netflix.html">Netflix</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown sidebar-dropdown-div">
+                            <a class="sidebar-btn" type="button" href="#">
+                                <div class="row col-12">
+                                    <div class="col-1">
+                                        <i class="bx bx-desktop sidebar-btn-icons"></i>
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="sidebar-btn-span"> Monitoramento </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="dropdown sidebar-dropdown-div">
+                            <button class="sidebar-btn" type="button" data-bs-toggle="dropdown">
+                                <div class="row col-12">
+                                    <div class="col-1">
+                                        <i class="bx bx-server sidebar-btn-icons"></i>
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="sidebar-btn-span"> OLT's </span>
+                                    </div>
+                                    <div class="col-1">
+                                        <i class="bx bx-chevron-right sidebar-btn-icon-arrow"></i>
+                                    </div>
+                                </div>
+                            </button>
+                            <ul class="dropdown-menu sidebar-btn-ul">
+                                <li><a class="dropdown-item sidebar-li-a" href="../olt/fiberhome.html">Fiberhome</a>
+                                </li>
+                                <li><a class="dropdown-item sidebar-li-a" href="../olt/olt_huawei.html">Huawei</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown sidebar-dropdown-div">
+                            <a class="sidebar-btn" type="button" href="../repetidores/repetidores.html">
+                                <div class="row col-12">
+                                    <div class="col-1">
+                                        <i class="bx bx-wifi sidebar-btn-icons"></i>
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="sidebar-btn-span"> Repetidores </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="dropdown sidebar-dropdown-div">
+                            <a class="sidebar-btn" type="button" href="../inventario/inventario.html">
+                                <div class="row col-12">
+                                    <div class="col-1">
+                                        <i class="bx bx-calendar-edit sidebar-btn-icons"></i>
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="sidebar-btn-span"> Inventário </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="sidebar-footer">
+                            <hr>
+                            <div class="sidebar-footer-text">Copyright © &nbsp;&nbsp; brERS 2022</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page" id="page">
+
+        <div class="header" id="header">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-10">
+                        <button id="sidebarToggle" class="buttontoggler sidebarToggle" type="button">
+                            <span class="bx bx-menu"></span>
+                        </button>
+                    </div>
+
+                    <div class="dropdown col-2">
+                        <a class="link" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            BR ERS &nbsp
+                            <img src="https://img.icons8.com/ios-glyphs/90/000000/user-male-circle.png"
+                                class="rounded-circle" height="25" loading="lazy" />
+                        </a>
+                        <ul class="dropdown-menu conta" aria-labelledby="dropdownMenuLink">
+                            <li>
+                                <a class="dropdown-item" href="../conta/gerenciar.html">
+                                    <i class='bx bx-cog'></i> Gerenciar Conta
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class='bx bx-exit'></i> Sair
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="content" class="content">
+            <div class="row content-row">
+                <div class="row title  col-md-12">
+                    <h1 class="col-11">Monitoramento</h1>
+                    <!-- Button trigger modal -->
+                    <div class="col-1 infomation-pos">
+                        <div class="input-group flex-nowrap infomation-content">
+                            <i class="bx bx-info-circle input-group-text infomation-icon" id="addon-wrapping"></i>
+                            <button type="button" class="btn btn-sm infomation" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Informação
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-space">
+                    <div class="col-md-3">
+                        <div class="card card-align">
+                            <div class="card-header h_shadow">
+                                BNGs Status
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item text-bg-danger">
+                                    <div class="row">
+                                        <span class="col-6">BCAME60X8A01</span>
+                                        <span class="col-3">ERROR</span>
+                                        <span class="col-3">N/A</span>
+                                    </div>
+                                </li>
+
+                                <li class="list-group-item text-bg-danger">
+                                    <div class="row">
+                                        <span class="col-6">BCAMX20402</span>
+                                        <span class="col-3">ERROR</span>
+                                        <span class="col-3">N/A</span>
+                                    </div>
+                                </li>
+
+                                <li class="list-group-item text-bg-warning">
+                                    <div class="row">
+                                        <span class="col-6">BHECCR200401</span>
+                                        <span class="col-3">WARN</span>
+                                        <span class="col-3">1122ms</span>
+                                    </div>
+                                </li>
+
+                                <li class="list-group-item text-bg-warning">
+                                    <div class="row">
+                                        <span class="col-6">CNLMX10401</span>
+                                        <span class="col-3">WARN</span>
+                                        <span class="col-3">526ms</span>
+                                    </div>
+                                </li>
+
+                                <li class="list-group-item text-bg-warning">
+                                    <div class="row">
+                                        <span class="col-6">CNLME60X16A01</span>
+                                        <span class="col-3">WARN</span>
+                                        <span class="col-3">726ms</span>
+                                    </div>
+                                </li>
+                                <li class="list-group-item text-bg-secondary">
+                                    <div class="row">
+                                        <span class="col-9">Número de Clientes Afetados:</span>
+                                        <span class="col-3">25340</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card card-align">
+                            <div class="card-header h_shadow">
+                                CDNs Status
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item text-bg-success">
+                                    <div class="row">
+                                        <span class="col-12">Tudo OK por aqui.</span>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">&nbsp;
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card card-align">
+                            <div class="card-header h_shadow">
+                                OLT's Status
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item text-bg-danger">
+                                    <div class="row">
+                                        <span class="col-6">BCAFBAN55160102</span>
+                                        <span class="col-3">ERROR</span>
+                                        <span class="col-3">N/A</span>
+                                    </div>
+                                </li>
+                                <li class="list-group-item text-bg-warning">
+                                    <div class="row">
+                                        <span class="col-6">CNLFBAN60001702</span>
+                                        <span class="col-3">WARN</span>
+                                        <span class="col-3">526ms</span>
+                                    </div>
+                                </li>
+                                <li class="list-group-item text-bg-secondary">
+                                    <div class="row">
+                                        <span class="col-9">Número de Clientes Afetados:</span>
+                                        <span class="col-3">4689</span>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">&nbsp;
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card card-align">
+                            <div class="card-header h_shadow">
+                                Repetidores Status
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item text-bg-danger">
+                                    <div class="row">
+                                        <span class="col-6">BCAUARM502</span>
+                                        <span class="col-3">ERROR</span>
+                                        <span class="col-3">N/A</span>
+                                    </div>
+                                </li>
+                                <li class="list-group-item text-bg-danger">
+                                    <div class="row">
+                                        <span class="col-6">JFAUARM502</span>
+                                        <span class="col-3">ERROR</span>
+                                        <span class="col-3">N/A</span>
+                                    </div>
+                                </li>
+                                <li class="list-group-item text-bg-warning">
+                                    <div class="row">
+                                        <span class="col-6">BHEUARM503</span>
+                                        <span class="col-3">WARN</span>
+                                        <span class="col-3">1211ms</span>
+                                    </div>
+                                </li>
+                                <li class="list-group-item text-bg-secondary">
+                                    <div class="row">
+                                        <span class="col-9">Número de Clientes Afetados:</span>
+                                        <span class="col-3">358</span>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">&nbsp;
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-space-footer"></div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title h_shadow" id="exampleModalLabel">Info. Monitoramento</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Aqui será listado apenas os BNG's, CDN's, OLT's e Repetidores que estão com problemas.</p>
+                    <p>Para visualizar todos os BNG's, CDN's, OLT's e Repetidores, acesse o menu conforme a necessidade.
+                    </p>
+                    <p>Para consultar qualquer esquipamento utilize o menu inventario.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn botao" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../assets/js/nav.js"></script>
+</body>
+
+</html>

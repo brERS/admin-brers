@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Portfólio - Dasboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfólio do brERS HTML, CSS e JS">
+    <meta name="keywords" content="html, css, js, site, brERS">
+    <meta name="robots" content="index">
+
+    <!--CSS e JS custom-->
+    <link href="../../assets/css/nav_custom.css" rel="stylesheet">
+    <link href="../../assets/css/utils.css" rel="stylesheet">
+    <link href="../../assets/css/datatables_custom.css" rel="stylesheet">
+
+    <!--CSS e JS Bootstrap-->
+    <link href="../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- ECHARTS -->
+    <script src="../../assets/js/echarts.min.js"></script>
+
+    <!-- Icones table -->
+    <link rel='stylesheet' type='text/css'
+        href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="offcanvas-lg sidebar">
+
+        <div class="sidebar-img-background">
+            <div class='sidebar-background-color-opacity'>
+                <div class="offcanvas-body sidebar-body">
+                    <div class="sidebar-body">
+                        <div class="sidebar-header">
+                            <i class="bx bx-home sidebar-header-icons"></i>
+                            <a class="sidebar-header-span" href="../home/index.html">brERS</a>
+                        </div>
+                        <hr>
+                        <div class="dropdown sidebar-dropdown-div">
+                            <a class="sidebar-btn" type="button" href="#">
+                                <div class="row col-12">
+                                    <div class="col-1">
+                                        <i class="bx bx-bar-chart-square sidebar-btn-icons"></i>
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="sidebar-btn-span"> Dashboard </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="dropdown sidebar-dropdown-div">
+                            <button class="sidebar-btn" type="button" data-bs-toggle="dropdown">
+                                <div class="row col-12">
+                                    <div class="col-1">
+                                        <i class="bx bx-hdd sidebar-btn-icons"></i>
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="sidebar-btn-span"> BNG's </span>
+                                    </div>
+                                    <div class="col-1">
+                                        <i class="bx bx-chevron-right sidebar-btn-icon-arrow"></i>
+                                    </div>
+                                </div>
+                            </button>
+                            <ul class="dropdown-menu sidebar-btn-ul">
+                                <li><a class="dropdown-item sidebar-li-a" href="../bng/huawei.html">Huawei</a></li>
+                                <li><a class="dropdown-item sidebar-li-a" href="../bng/juniper.html">Juniper</a></li>
+                                <li><a class="dropdown-item sidebar-li-a" href="../bng/mikrotik.html">Mikrotik</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown sidebar-dropdown-div">
+                            <button class="sidebar-btn" type="button" data-bs-toggle="dropdown">
+                                <div class="row col-12">
+                                    <div class="col-1">
+                                        <i class="bx bx-data sidebar-btn-icons"></i>
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="sidebar-btn-span"> CDN's </span>
+                                    </div>
+                                    <div class="col-1">
+                                        <i class="bx bx-chevron-right sidebar-btn-icon-arrow"></i>
+                                    </div>
+                                </div>
+                            </button>
+                            <ul class="dropdown-menu sidebar-btn-ul">
+                                <li><a class="dropdown-item sidebar-li-a" href="../cdn/facebook.html">Facebook</a></li>
+                                <li><a class="dropdown-item sidebar-li-a" href="../cdn/netflix.html">Netflix</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown sidebar-dropdown-div">
+                            <a class="sidebar-btn" type="button" href="../home/monitoramento.html">
+                                <div class="row col-12">
+                                    <div class="col-1">
+                                        <i class="bx bx-desktop sidebar-btn-icons"></i>
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="sidebar-btn-span"> Monitoramento </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="dropdown sidebar-dropdown-div">
+                            <button class="sidebar-btn" type="button" data-bs-toggle="dropdown">
+                                <div class="row col-12">
+                                    <div class="col-1">
+                                        <i class="bx bx-server sidebar-btn-icons"></i>
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="sidebar-btn-span"> OLT's </span>
+                                    </div>
+                                    <div class="col-1">
+                                        <i class="bx bx-chevron-right sidebar-btn-icon-arrow"></i>
+                                    </div>
+                                </div>
+                            </button>
+                            <ul class="dropdown-menu sidebar-btn-ul">
+                                <li>
+                                    <a class="dropdown-item sidebar-li-a" href="../olt/fiberhome.html">Fiberhome</a>
+                                </li>
+                                <li><a class="dropdown-item sidebar-li-a" href="../olt/olt_huawei.html">Huawei</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown sidebar-dropdown-div">
+                            <a class="sidebar-btn" type="button" href="../repetidores/repetidores.html">
+                                <div class="row col-12">
+                                    <div class="col-1">
+                                        <i class="bx bx-wifi sidebar-btn-icons"></i>
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="sidebar-btn-span"> Repetidores </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="dropdown sidebar-dropdown-div">
+                            <a class="sidebar-btn" type="button" href="../inventario/inventario.html">
+                                <div class="row col-12">
+                                    <div class="col-1">
+                                        <i class="bx bx-calendar-edit sidebar-btn-icons"></i>
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="sidebar-btn-span"> Inventário </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="sidebar-footer">
+                            <hr>
+                            <div class="sidebar-footer-text">Copyright © &nbsp;&nbsp; brERS 2022</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page" id="page">
+
+        <div class="header" id="header">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-10">
+                        <button id="sidebarToggle" class="buttontoggler sidebarToggle" type="button">
+                            <span class="bx bx-menu"></span>
+                        </button>
+                    </div>
+
+                    <div class="dropdown col-2">
+                        <a class="link" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            BR ERS &nbsp
+                            <img src="https://img.icons8.com/ios-glyphs/90/000000/user-male-circle.png"
+                                class="rounded-circle" height="25" loading="lazy" />
+                        </a>
+                        <ul class="dropdown-menu conta" aria-labelledby="dropdownMenuLink">
+                            <li>
+                                <a class="dropdown-item" href="../conta/gerenciar.html">
+                                    <i class='bx bx-cog'></i> Gerenciar Conta
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class='bx bx-exit'></i> Sair
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="content" class="content">
+            <div class="row content-row">
+                <div class="row title">
+                    <h1>Dashboard</h1>
+                </div>
+
+                <div class="row row-space">
+                    <div class="col-md-6">
+                        <div class="card-body cards card_shadow col-12 card-align">
+                            <div id='main_one' class='col-12' style='height:300px; width:100%; overflow-x: hidden'>
+                            </div>
+                            <script type='text/javascript'>
+
+                                // Initialize the echarts instance based on the prepared dom
+                                var one = echarts.init(document.getElementById('main_one'));
+
+                                // Specify the configuration items and data for the chart
+                                var option = {
+                                    color: ['#d7293d', '#ffc107', '#adb5bd'],
+                                    title: {
+                                        text: 'BNGs Total de clientes por vendor',
+                                        left: 'center',
+                                        textStyle: {
+                                            color: '#d7293d'
+                                        }
+                                    },
+                                    dataset: {
+                                        source: [
+                                            ['product', '2012'],
+                                            ['Juniper', 12.684],
+                                            ['Huawei', 17.987],
+                                            ['Mikrotik', 4.568],
+                                        ]
+                                    },
+                                    series: [
+                                        {
+                                            type: 'pie',
+                                            radius: '70%',
+                                            center: ['50%', '55%'],
+                                            emphasis: {
+                                                focus: 'self'
+                                            },
+                                            label: {
+                                                formatter: '{b}: {@2012} ({d}%)'
+                                            },
+                                        }
+                                    ]
+                                };
+                                // Display the chart using the configuration items and data just specified.
+                                one.setOption(option);
+
+                                window.addEventListener('resize', function () {
+                                    one.resize();
+                                })
+                            </script>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card-body cards card_shadow col-12 card-align">
+                            <div id='main_two' class='col-12' style='height:300px; width:100%; overflow-x: hidden'>
+                            </div>
+                            <script type='text/javascript'>
+
+                                // Initialize the echarts instance based on the prepared dom
+                                var two = echarts.init(document.getElementById('main_two'));
+
+                                // Specify the configuration items and data for the chart
+                                var option = {
+                                    color: ['#d7293d', '#ffc107', '#adb5bd'],
+                                    title: {
+                                        text: 'OLTs Total de clientes por vendor',
+                                        left: 'center',
+                                        textStyle: {
+                                            color: '#d7293d'
+                                        }
+                                    },
+                                    dataset: {
+                                        source: [
+                                            ['product', '2012'],
+                                            ['Fiberhome', 42.684],
+                                            ['Huawei', 37.987],
+                                        ]
+                                    },
+                                    series: [
+                                        {
+                                            type: 'pie',
+                                            radius: '70%',
+                                            center: ['50%', '55%'],
+                                            emphasis: {
+                                                focus: 'self'
+                                            },
+                                            label: {
+                                                formatter: '{b}: {@2012} ({d}%)'
+                                            },
+                                        }
+                                    ]
+                                };
+                                // Display the chart using the configuration items and data just specified.
+                                two.setOption(option);
+
+                                window.addEventListener('resize', function () {
+                                    two.resize();
+                                })
+                            </script>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-space">
+                    <div class="col-md-6">
+                        <div class="card-body cards card_shadow col-12 card-align">
+                            <div id='main_three' class='col-12' style='height:300px; width:100%; overflow-x: hidden'>
+                            </div>
+                            <script type='text/javascript'>
+                                // Initialize the echarts instance based on the prepared dom
+                                var three = echarts.init(document.getElementById('main_three'));
+
+                                // Specify the configuration items and data for the chart
+                                var option = {
+
+                                    color: ['#d7293d', '#ffc107', '#adb5bd'],
+                                    title: {
+                                        text: 'Total de BNGs por região',
+                                        textStyle: {
+                                            color: '#d7293d'
+                                        }
+                                    },
+                                    tooltip: {
+                                        trigger: 'axis',
+                                        axisPointer: {
+                                            type: 'shadow'
+                                        }
+                                    },
+                                    legend: {
+                                        left: 'right'
+                                    },
+                                    grid: {
+                                        left: '3%',
+                                        right: '4%',
+                                        bottom: '3%',
+                                        containLabel: true
+                                    },
+                                    xAxis: {
+                                        type: 'value',
+                                        boundaryGap: [0, 0.01]
+                                    },
+                                    yAxis: {
+                                        type: 'category',
+                                        data: ['JFA', 'CNL', 'BHE', 'BCA']
+                                    },
+                                    series: [
+                                        {
+                                            name: 'Juniper',
+                                            type: 'bar',
+                                            data: [4, 3, 6, 2],
+                                            label: {
+                                                show: true,
+                                                position: 'inside'
+                                            }
+                                        },
+                                        {
+                                            name: 'Huawei',
+                                            type: 'bar',
+                                            data: [16, 12, 15, 5],
+                                            label: {
+                                                show: true,
+                                                position: 'inside'
+                                            }
+                                        },
+                                        {
+                                            name: 'Mikrotik',
+                                            type: 'bar',
+                                            data: [3, 3, 14, 8],
+                                            label: {
+                                                show: true,
+                                                position: 'inside'
+                                            }
+                                        }
+                                    ]
+                                };
+                                // Display the chart using the configuration items and data just specified.
+                                three.setOption(option);
+
+                                window.addEventListener('resize', function () {
+                                    three.resize();
+                                })
+                            </script>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body cards card_shadow col-12 card-align">
+                            <div id='main_four' class='col-12' style='height:300px; width:100%; overflow-x: hidden'>
+                            </div>
+                            <script type='text/javascript'>
+                                // Initialize the echarts instance based on the prepared dom
+                                var four = echarts.init(document.getElementById('main_four'));
+
+                                // Specify the configuration items and data for the chart
+                                var option = {
+
+                                    color: ['#d7293d', '#ffc107', '#adb5bd'],
+                                    title: {
+                                        text: 'Total de cliente por BNGs e região',
+                                        textStyle: {
+                                            color: '#d7293d'
+                                        }
+                                    },
+                                    tooltip: {
+                                        trigger: 'axis',
+                                        axisPointer: {
+                                            type: 'shadow'
+                                        }
+                                    },
+                                    legend: {
+                                        left: 'right'
+                                    },
+                                    grid: {
+                                        left: '3%',
+                                        right: '4%',
+                                        bottom: '3%',
+                                        containLabel: true
+                                    },
+                                    xAxis: {
+                                        type: 'value',
+                                        boundaryGap: [0, 0.01]
+                                    },
+                                    yAxis: {
+                                        type: 'category',
+                                        data: ['JFA', 'CNL', 'BHE', 'BCA']
+                                    },
+                                    series: [
+                                        {
+                                            name: 'Juniper',
+                                            type: 'bar',
+                                            data: [401, 3123, 632, 2111],
+                                            label: {
+                                                show: true,
+                                                position: 'inside'
+                                            }
+                                        },
+                                        {
+                                            name: 'Huawei',
+                                            type: 'bar',
+                                            data: [1632, 1215, 1554, 5324],
+                                            label: {
+                                                show: true,
+                                                position: 'inside'
+                                            }
+                                        },
+                                        {
+                                            name: 'Mikrotik',
+                                            type: 'bar',
+                                            data: [3432, 3123, 1465, 8234],
+                                            label: {
+                                                show: true,
+                                                position: 'inside'
+                                            }
+                                        }
+                                    ]
+                                };
+                                // Display the chart using the configuration items and data just specified.
+                                four.setOption(option);
+
+                                window.addEventListener('resize', function () {
+                                    four.resize();
+                                })
+                            </script>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="row row-space">
+                    <div class="col-md-12">
+                        <div class="card-body cards card_shadow col-12 card-align">
+                            <div id='main_five' class='col-12' style='height:300px; width:100%; overflow-x: hidden'>
+                            </div>
+                            <script type='text/javascript'>
+                                // Initialize the echarts instance based on the prepared dom
+                                var five = echarts.init(document.getElementById('main_five'));
+
+                                // Specify the configuration items and data for the chart
+                                var option = {
+
+                                    color: ['#d7293d'],
+                                    title: {
+                                        text: 'Total de cliente por Repetidor',
+                                        left: 'center',
+                                        textStyle: {
+                                            color: '#d7293d'
+                                        }
+                                    },
+                                    dataset: [
+                                        {
+                                            dimensions: ['name', 'score'],
+                                            source: [
+                                                ['BCAUARM501', 41],
+                                                ['BCAUARM502', 20],
+                                                ['BHEUARM501', 52],
+                                                ['JFAUARM501', 37],
+                                                ['CNLUARM502', 25],
+                                                ['BHEUARM503', 71],
+                                                ['BCAUARM503', 36],
+                                                ['CNLUARM503', 87],
+                                                ['CNLUARM504', 23],
+                                                ['BHEUARM503', 71],
+                                                ['BCAUARM504', 58],
+                                                ['CNLUARM505', 67]
+                                            ]
+                                        },
+                                        {
+                                            transform: {
+                                                type: 'sort',
+                                                config: { dimension: 'score', order: 'desc' }
+                                            }
+                                        }
+                                    ],
+                                    xAxis: {
+                                        type: 'category',
+                                        axisLabel: { interval: 0, rotate: 30 }
+                                    },
+                                    yAxis: {},
+                                    series: {
+                                        label: {
+                                            show: true,
+                                            position: 'inside'
+                                        },
+                                        type: 'bar',
+                                        encode: { x: 'name', y: 'score' },
+                                        datasetIndex: 1
+                                    }
+                                };
+                                // Display the chart using the configuration items and data just specified.
+                                five.setOption(option);
+
+                                window.addEventListener('resize', function () {
+                                    five.resize();
+                                })
+                            </script>
+                        </div>
+                    </div>
+
+
+                    <div class="row row-space-footer"></div>
+
+                </div>
+            </div>
+
+        </div>
+        <script src="../../assets/js/nav.js"></script>
+</body>
+
+</html>

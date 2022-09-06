@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Portfólio - CDN Netflix</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfólio do brERS HTML, CSS e JS">
+    <meta name="keywords" content="html, css, js, site, brERS">
+    <meta name="robots" content="index">
+
+    <!--CSS e JS custom-->
+    <link href="../../assets/css/nav_custom.css" rel="stylesheet">
+    <link href="../../assets/css/utils.css" rel="stylesheet">
+    <link href="../../assets/css/datatables_custom.css" rel="stylesheet">
+    <script src="../../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../../assets/js/countup.js"></script>
+    <script src="../../assets/js/table.js"></script>
+
+    <!--CSS e JS Bootstrap-->
+    <link href="../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- ECHARTS -->
+    <script src="../../assets/js/echarts.min.js"></script>
+
+    <!-- Icones table -->
+    <link rel='stylesheet' type='text/css'
+        href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- CSS e JS do DataTables -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css">
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.1/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.1/js/buttons.bootstrap5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.1/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.1/js/buttons.print.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.1/js/buttons.colVis.min.js"></script>
+
+</head>
+
+<body>
+    <div class="offcanvas-lg sidebar">
+
+        <div class="sidebar-img-background">
+            <div class='sidebar-background-color-opacity'>
+                <div class="offcanvas-body sidebar-body">
+                    <div class="sidebar-body">
+                        <div class="sidebar-header">
+                            <i class="bx bx-home sidebar-header-icons"></i>
+                            <a class="sidebar-header-span" href="../home/index.html">brERS</a>
+                        </div>
+                        <hr>
+                        <div class="dropdown sidebar-dropdown-div">
+                            <a class="sidebar-btn" type="button" href="../home/dashboard.html">
+                                <div class="row col-12">
+                                    <div class="col-1">
+                                        <i class="bx bx-bar-chart-square sidebar-btn-icons"></i>
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="sidebar-btn-span"> Dashboard </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="dropdown sidebar-dropdown-div">
+                            <button class="sidebar-btn" type="button" data-bs-toggle="dropdown">
+                                <div class="row col-12">
+                                    <div class="col-1">
+                                        <i class="bx bx-hdd sidebar-btn-icons"></i>
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="sidebar-btn-span"> BNG's </span>
+                                    </div>
+                                    <div class="col-1">
+                                        <i class="bx bx-chevron-right sidebar-btn-icon-arrow"></i>
+                                    </div>
+                                </div>
+                            </button>
+                            <ul class="dropdown-menu sidebar-btn-ul">
+                                <li><a class="dropdown-item sidebar-li-a" href="../bng/huawei.html">Huawei</a></li>
+                                <li><a class="dropdown-item sidebar-li-a" href="../bng/juniper.html">Juniper</a></li>
+                                <li><a class="dropdown-item sidebar-li-a" href="../bng/mikrotik.html">Mikrotik</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown sidebar-dropdown-div">
+                            <button class="sidebar-btn" type="button" data-bs-toggle="dropdown">
+                                <div class="row col-12">
+                                    <div class="col-1">
+                                        <i class="bx bx-data sidebar-btn-icons"></i>
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="sidebar-btn-span"> CDN's </span>
+                                    </div>
+                                    <div class="col-1">
+                                        <i class="bx bx-chevron-right sidebar-btn-icon-arrow"></i>
+                                    </div>
+                                </div>
+                            </button>
+                            <ul class="dropdown-menu sidebar-btn-ul">
+                                <li><a class="dropdown-item sidebar-li-a" href="facebook.html">Facebook</a></li>
+                                <li><a class="dropdown-item sidebar-li-a" href="#">Netflix</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown sidebar-dropdown-div">
+                            <a class="sidebar-btn" type="button" href="../home/monitoramento.html">
+                                <div class="row col-12">
+                                    <div class="col-1">
+                                        <i class="bx bx-desktop sidebar-btn-icons"></i>
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="sidebar-btn-span"> Monitoramento </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="dropdown sidebar-dropdown-div">
+                            <button class="sidebar-btn" type="button" data-bs-toggle="dropdown">
+                                <div class="row col-12">
+                                    <div class="col-1">
+                                        <i class="bx bx-server sidebar-btn-icons"></i>
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="sidebar-btn-span"> OLT's </span>
+                                    </div>
+                                    <div class="col-1">
+                                        <i class="bx bx-chevron-right sidebar-btn-icon-arrow"></i>
+                                    </div>
+                                </div>
+                            </button>
+                            <ul class="dropdown-menu sidebar-btn-ul">
+                                <li>
+                                    <a class="dropdown-item sidebar-li-a" href="../olt/fiberhome.html">Fiberhome</a>
+                                </li>
+                                <li><a class="dropdown-item sidebar-li-a" href="../olt/olt_huawei.html">Huawei</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown sidebar-dropdown-div">
+                            <a class="sidebar-btn" type="button" href="../repetidores/repetidores.html">
+                                <div class="row col-12">
+                                    <div class="col-1">
+                                        <i class="bx bx-wifi sidebar-btn-icons"></i>
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="sidebar-btn-span"> Repetidores </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="dropdown sidebar-dropdown-div">
+                            <a class="sidebar-btn" type="button" href="../inventario/inventario.html">
+                                <div class="row col-12">
+                                    <div class="col-1">
+                                        <i class="bx bx-calendar-edit sidebar-btn-icons"></i>
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="sidebar-btn-span"> Inventário </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="sidebar-footer">
+                            <hr>
+                            <div class="sidebar-footer-text">Copyright © &nbsp;&nbsp; brERS 2022</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page" id="page">
+
+        <div class="header" id="header">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-10">
+                        <button id="sidebarToggle" class="buttontoggler sidebarToggle" type="button">
+                            <span class="bx bx-menu"></span>
+                        </button>
+                    </div>
+
+                    <div class="dropdown col-2">
+                        <a class="link" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            BR ERS &nbsp
+                            <img src="https://img.icons8.com/ios-glyphs/90/000000/user-male-circle.png"
+                                class="rounded-circle" height="25" loading="lazy" />
+                        </a>
+                        <ul class="dropdown-menu conta" aria-labelledby="dropdownMenuLink">
+                            <li>
+                                <a class="dropdown-item" href="../conta/gerenciar.html">
+                                    <i class='bx bx-cog'></i> Gerenciar Conta
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class='bx bx-exit'></i> Sair
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="content" class="content">
+            <div class="row content-row">
+                <div class="row title">
+                    <h1>CDN Netflix</h1>
+                </div>
+                <div class="row row-space">
+                    <div class="col-md-4">
+                        <div class="card-body cards card_shadow col-12 card-align">
+                            <div id='main_six' class='col-12' style='height:300px; width:100%; overflow-x: hidden'>
+                            </div>
+                            <script type='text/javascript'>
+
+                                // Initialize the echarts instance based on the prepared dom
+                                var cpuload = echarts.init(document.getElementById('main_six'));
+
+                                // Specify the configuration items and data for the chart
+                                var option = {
+                                    title: {
+                                        left: 'center',
+                                        text: 'Processor Load'
+                                    },
+                                    series: [
+                                        {
+                                            type: 'gauge',
+                                            center: ['50%', '70%'],
+                                            startAngle: 200,
+                                            endAngle: -20,
+                                            min: 0,
+                                            max: 100,
+                                            splitNumber: 5,
+                                            itemStyle: {
+                                                color: 'rgba(215, 41, 61,0.6)'
+                                            },
+                                            progress: {
+                                                show: true,
+                                                width: 30
+                                            },
+                                            pointer: {
+                                                show: false
+                                            },
+                                            axisLine: {
+                                                lineStyle: {
+                                                    width: 30
+                                                }
+                                            },
+                                            axisTick: {
+                                                distance: -45,
+                                                splitNumber: 5,
+                                                lineStyle: {
+                                                    width: 2,
+                                                    color: '#999'
+                                                }
+                                            },
+                                            splitLine: {
+                                                distance: -52,
+                                                length: 14,
+                                                lineStyle: {
+                                                    width: 3,
+                                                    color: '#999'
+                                                }
+                                            },
+                                            axisLabel: {
+                                                distance: -20,
+                                                color: '#999',
+                                                fontSize: 20
+                                            },
+                                            anchor: {
+                                                show: false
+                                            },
+                                            title: {
+                                                show: false
+                                            },
+                                            detail: {
+                                                valueAnimation: true,
+                                                width: '60%',
+                                                lineHeight: 40,
+                                                borderRadius: 8,
+                                                offsetCenter: [0, '-15%'],
+                                                fontSize: 25,
+                                                fontWeight: 'bolder',
+                                                formatter: '{value}',
+                                                color: 'auto'
+                                            },
+                                            data: [
+                                                {
+                                                    value: 20
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            type: 'gauge',
+                                            center: ['50%', '70%'],
+                                            startAngle: 200,
+                                            endAngle: -20,
+                                            min: 0,
+                                            max: 100,
+                                            itemStyle: {
+                                                color: '#d7293d'
+                                            },
+                                            progress: {
+                                                show: true,
+                                                width: 8
+                                            },
+                                            pointer: {
+                                                show: false
+                                            },
+                                            axisLine: {
+                                                show: false
+                                            },
+                                            axisTick: {
+                                                show: false
+                                            },
+                                            splitLine: {
+                                                show: false
+                                            },
+                                            axisLabel: {
+                                                show: false
+                                            },
+                                            detail: {
+                                                show: false
+                                            },
+                                            data: [
+                                                {
+                                                    value: 20
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                };
+                                setInterval(function () {
+                                    const random = +(Math.random() * 2).toFixed(2);
+                                    cpuload.setOption({
+                                        series: [
+                                            {
+                                                data: [
+                                                    {
+                                                        value: random
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                data: [
+                                                    {
+                                                        value: random
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    });
+                                }, 2000);
+                                // Display the chart using the configuration items and data just specified.
+                                cpuload.setOption(option);
+
+                                window.addEventListener('resize', function () {
+                                    cpuload.resize();
+                                })
+                            </script>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-body cards card_shadow col-12 card-align">
+                            <div id='main_three' class='col-12' style='height:300px; width:100%; overflow-x: hidden'>
+                            </div>
+                            <script type='text/javascript'>
+
+                                // Initialize the echarts instance based on the prepared dom
+                                var cpu = echarts.init(document.getElementById('main_three'));
+
+                                // Specify the configuration items and data for the chart
+                                var option = {
+                                    title: {
+                                        left: 'center',
+                                        text: 'CPU'
+                                    },
+                                    series: [
+                                        {
+                                            type: 'gauge',
+                                            center: ['50%', '70%'],
+                                            startAngle: 200,
+                                            endAngle: -20,
+                                            min: 0,
+                                            max: 60,
+                                            splitNumber: 12,
+                                            itemStyle: {
+                                                color: 'rgba(215, 41, 61,0.6)'
+                                            },
+                                            progress: {
+                                                show: true,
+                                                width: 30
+                                            },
+                                            pointer: {
+                                                show: false
+                                            },
+                                            axisLine: {
+                                                lineStyle: {
+                                                    width: 30
+                                                }
+                                            },
+                                            axisTick: {
+                                                distance: -45,
+                                                splitNumber: 5,
+                                                lineStyle: {
+                                                    width: 2,
+                                                    color: '#999'
+                                                }
+                                            },
+                                            splitLine: {
+                                                distance: -52,
+                                                length: 14,
+                                                lineStyle: {
+                                                    width: 3,
+                                                    color: '#999'
+                                                }
+                                            },
+                                            axisLabel: {
+                                                distance: -20,
+                                                color: '#999',
+                                                fontSize: 20
+                                            },
+                                            anchor: {
+                                                show: false
+                                            },
+                                            title: {
+                                                show: false
+                                            },
+                                            detail: {
+                                                valueAnimation: true,
+                                                width: '60%',
+                                                lineHeight: 40,
+                                                borderRadius: 8,
+                                                offsetCenter: [0, '-15%'],
+                                                fontSize: 25,
+                                                fontWeight: 'bolder',
+                                                formatter: '{value} °C',
+                                                color: 'auto'
+                                            },
+                                            data: [
+                                                {
+                                                    value: 20
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            type: 'gauge',
+                                            center: ['50%', '70%'],
+                                            startAngle: 200,
+                                            endAngle: -20,
+                                            min: 0,
+                                            max: 60,
+                                            itemStyle: {
+                                                color: '#d7293d'
+                                            },
+                                            progress: {
+                                                show: true,
+                                                width: 8
+                                            },
+                                            pointer: {
+                                                show: false
+                                            },
+                                            axisLine: {
+                                                show: false
+                                            },
+                                            axisTick: {
+                                                show: false
+                                            },
+                                            splitLine: {
+                                                show: false
+                                            },
+                                            axisLabel: {
+                                                show: false
+                                            },
+                                            detail: {
+                                                show: false
+                                            },
+                                            data: [
+                                                {
+                                                    value: 20
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                };
+                                setInterval(function () {
+                                    const random = +(Math.random() * 60).toFixed(2);
+                                    cpu.setOption({
+                                        series: [
+                                            {
+                                                data: [
+                                                    {
+                                                        value: random
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                data: [
+                                                    {
+                                                        value: random
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    });
+                                }, 2000);
+                                // Display the chart using the configuration items and data just specified.
+                                cpu.setOption(option);
+
+                                window.addEventListener('resize', function () {
+                                    cpu.resize();
+                                })
+                            </script>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-body cards card_shadow col-12 card-align">
+                            <div id='main_four' class='col-12' style='height:300px; width:100%; overflow-x: hidden'>
+                            </div>
+                            <script type='text/javascript'>
+
+                                // Initialize the echarts instance based on the prepared dom
+                                var mem = echarts.init(document.getElementById('main_four'));
+
+                                // Specify the configuration items and data for the chart
+                                var option = {
+                                    title: {
+                                        left: 'center',
+                                        text: 'Memória'
+                                    },
+                                    series: [
+                                        {
+                                            type: 'gauge',
+                                            center: ['50%', '70%'],
+                                            startAngle: 200,
+                                            endAngle: -20,
+                                            min: 0,
+                                            max: 2048,
+                                            splitNumber: 4,
+                                            itemStyle: {
+                                                color: 'rgba(215, 41, 61,0.6)'
+                                            },
+                                            progress: {
+                                                show: true,
+                                                width: 30
+                                            },
+                                            pointer: {
+                                                show: false
+                                            },
+                                            axisLine: {
+                                                lineStyle: {
+                                                    width: 30
+                                                }
+                                            },
+                                            axisTick: {
+                                                distance: -45,
+                                                splitNumber: 5,
+                                                lineStyle: {
+                                                    width: 2,
+                                                    color: '#999'
+                                                }
+                                            },
+                                            splitLine: {
+                                                distance: -52,
+                                                length: 14,
+                                                lineStyle: {
+                                                    width: 3,
+                                                    color: '#999'
+                                                }
+                                            },
+                                            axisLabel: {
+                                                distance: -20,
+                                                color: '#999',
+                                                fontSize: 20
+                                            },
+                                            anchor: {
+                                                show: false
+                                            },
+                                            title: {
+                                                show: false
+                                            },
+                                            detail: {
+                                                valueAnimation: true,
+                                                width: '60%',
+                                                lineHeight: 40,
+                                                borderRadius: 8,
+                                                offsetCenter: [0, '-15%'],
+                                                fontSize: 25,
+                                                fontWeight: 'bolder',
+                                                formatter: '{value} Mib',
+                                                color: 'auto'
+                                            },
+                                            data: [
+                                                {
+                                                    value: 20
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            type: 'gauge',
+                                            center: ['50%', '70%'],
+                                            startAngle: 200,
+                                            endAngle: -20,
+                                            min: 0,
+                                            max: 2048,
+                                            itemStyle: {
+                                                color: '#d7293d'
+                                            },
+                                            progress: {
+                                                show: true,
+                                                width: 8
+                                            },
+                                            pointer: {
+                                                show: false
+                                            },
+                                            axisLine: {
+                                                show: false
+                                            },
+                                            axisTick: {
+                                                show: false
+                                            },
+                                            splitLine: {
+                                                show: false
+                                            },
+                                            axisLabel: {
+                                                show: false
+                                            },
+                                            detail: {
+                                                show: false
+                                            },
+                                            data: [
+                                                {
+                                                    value: 20
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                };
+                                setInterval(function () {
+                                    const random = +(Math.random() * 2048).toFixed(2);
+                                    mem.setOption({
+                                        series: [
+                                            {
+                                                data: [
+                                                    {
+                                                        value: random
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                data: [
+                                                    {
+                                                        value: random
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    });
+                                }, 2000);
+                                // Display the chart using the configuration items and data just specified.
+                                mem.setOption(option);
+
+                                window.addEventListener('resize', function () {
+                                    mem.resize();
+                                })
+                            </script>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row row-space">
+                    <div class="col-md-6">
+                        <div class="card-body cards card_shadow col-12 card-align">
+                            <div id='main_one' class='col-12' style='height:300px; width:100%; overflow-x: hidden'>
+                            </div>
+                            <script type='text/javascript'>
+                                let base = +new Date(2022, 9, 3);
+                                let oneDay = 24 * 3600 * 10;
+                                let date = [];
+                                let data = [Math.random() * 300];
+                                for (let i = 1; i < 20000; i++) {
+                                    var now = new Date((base += oneDay));
+                                    date.push([now.getFullYear(), now.getMonth() + 2, now.getDate()].join('/'));
+                                    data.push(Math.round((Math.random() - 0.5) * 2 + data[i - 1]));
+                                }
+                                // Initialize the echarts instance based on the prepared dom
+                                var one = echarts.init(document.getElementById('main_one'));
+
+                                // Specify the configuration items and data for the chart
+                                var option = option = {
+                                    tooltip: {
+                                        trigger: 'axis',
+                                        position: function (pt) {
+                                            return [pt[0], '10%'];
+                                        }
+                                    },
+                                    title: {
+                                        left: 'center',
+                                        text: 'Throughput'
+                                    },
+                                    toolbox: {
+                                        feature: {
+                                            dataZoom: {
+                                                yAxisIndex: 'none'
+                                            },
+                                            restore: {},
+                                            saveAsImage: {}
+                                        }
+                                    },
+                                    xAxis: {
+                                        type: 'category',
+                                        boundaryGap: false,
+                                        data: date
+                                    },
+                                    yAxis: {
+                                        type: 'value',
+                                        boundaryGap: [0, '100%']
+                                    },
+                                    dataZoom: [
+                                        {
+                                            type: 'inside',
+                                            start: 0,
+                                            end: 10
+                                        },
+                                        {
+                                            start: 0,
+                                            end: 10
+                                        }
+                                    ],
+                                    series: [
+                                        {
+                                            name: 'Fake Data',
+                                            type: 'line',
+                                            symbol: 'none',
+                                            sampling: 'lttb',
+                                            itemStyle: {
+                                                color: 'rgb(255, 70, 131)'
+                                            },
+                                            areaStyle: {
+                                                color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                                                    {
+                                                        offset: 0,
+                                                        color: 'rgb(255, 158, 68)'
+                                                    },
+                                                    {
+                                                        offset: 1,
+                                                        color: 'rgb(255, 70, 131)'
+                                                    }
+                                                ])
+                                            },
+                                            data: data
+                                        }
+                                    ]
+                                };
+                                // Display the chart using the configuration items and data just specified.
+                                one.setOption(option);
+
+                                window.addEventListener('resize', function () {
+                                    one.resize();
+                                })
+                            </script>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card-body cards card_shadow col-12 card-align">
+                            <div id='main_two' class='col-12' style='height:300px; width:100%; overflow-x: hidden'>
+                            </div>
+                            <script type='text/javascript'>
+                                let basetwo = +new Date(2022, 9, 3);
+                                let oneDaytwo = 24 * 3600 * 10;
+                                let datetwo = [];
+                                let datatwo = [Math.random() * 300];
+                                for (let i = 1; i < 20000; i++) {
+                                    var now = new Date((basetwo += oneDaytwo));
+                                    datetwo.push([now.getFullYear(), now.getMonth() + 2, now.getDate()].join('/'));
+                                    datatwo.push(Math.round((Math.random() - 0.5) * 3 + datatwo[i - 1]));
+                                }
+                                // Initialize the echarts instance based on the prepared dom
+                                var linetwo = echarts.init(document.getElementById('main_two'));
+
+                                // Specify the configuration items and data for the chart
+                                var option = option = {
+                                    tooltip: {
+                                        trigger: 'axis',
+                                        position: function (pt) {
+                                            return [pt[0], '10%'];
+                                        }
+                                    },
+                                    title: {
+                                        left: 'center',
+                                        text: 'Requests'
+                                    },
+                                    toolbox: {
+                                        feature: {
+                                            dataZoom: {
+                                                yAxisIndex: 'none'
+                                            },
+                                            restore: {},
+                                            saveAsImage: {}
+                                        }
+                                    },
+                                    xAxis: {
+                                        type: 'category',
+                                        boundaryGap: false,
+                                        data: date
+                                    },
+                                    yAxis: {
+                                        type: 'value',
+                                        boundaryGap: [0, '100%']
+                                    },
+                                    dataZoom: [
+                                        {
+                                            type: 'inside',
+                                            start: 0,
+                                            end: 10
+                                        },
+                                        {
+                                            start: 0,
+                                            end: 10
+                                        }
+                                    ],
+                                    series: [
+                                        {
+                                            name: 'Fake Data',
+                                            type: 'line',
+                                            symbol: 'none',
+                                            sampling: 'lttb',
+                                            itemStyle: {
+                                                color: 'rgb(255, 70, 131)'
+                                            },
+                                            areaStyle: {
+                                                color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                                                    {
+                                                        offset: 0,
+                                                        color: 'rgb(255, 158, 68)'
+                                                    },
+                                                    {
+                                                        offset: 1,
+                                                        color: 'rgb(255, 70, 131)'
+                                                    }
+                                                ])
+                                            },
+                                            data: data
+                                        }
+                                    ]
+                                };
+                                // Display the chart using the configuration items and data just specified.
+                                linetwo.setOption(option);
+
+                                window.addEventListener('resize', function () {
+                                    linetwo.resize();
+                                })
+                            </script>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row row-space-footer"></div>
+
+            </div>
+        </div>
+
+    </div>
+    <script src="../../assets/js/nav.js"></script>
+</body>
+
+</html>

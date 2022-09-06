@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Portfólio - Repetidores</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfólio do brERS HTML, CSS e JS">
+    <meta name="keywords" content="html, css, js, site, brERS">
+    <meta name="robots" content="index">
+
+    <!--CSS e JS custom-->
+    <link href="../../assets/css/nav_custom.css" rel="stylesheet">
+    <link href="../../assets/css/utils.css" rel="stylesheet">
+    <link href="../../assets/css/datatables_custom.css" rel="stylesheet">
+    <script src="../../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../../assets/js/countup.js"></script>
+    <script src="../../assets/js/table.js"></script>
+
+    <!--CSS e JS Bootstrap-->
+    <link href="../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Icones table -->
+    <link rel='stylesheet' type='text/css'
+        href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- CSS e JS do DataTables -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css">
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.1/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.1/js/buttons.bootstrap5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.1/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.1/js/buttons.print.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.1/js/buttons.colVis.min.js"></script>
+
+</head>
+
+<body>
+    <div class="offcanvas-lg sidebar">
+
+        <div class="sidebar-img-background">
+            <div class='sidebar-background-color-opacity'>
+                <div class="offcanvas-body sidebar-body">
+                    <div class="sidebar-body">
+                        <div class="sidebar-header">
+                            <i class="bx bx-home sidebar-header-icons"></i>
+                            <a class="sidebar-header-span" href="../home/index.html">brERS</a>
+                        </div>
+                        <hr>
+                        <div class="dropdown sidebar-dropdown-div">
+                            <a class="sidebar-btn" type="button" href="../home/dashboard.html">
+                                <div class="row col-12">
+                                    <div class="col-1">
+                                        <i class="bx bx-bar-chart-square sidebar-btn-icons"></i>
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="sidebar-btn-span"> Dashboard </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="dropdown sidebar-dropdown-div">
+                            <button class="sidebar-btn" type="button" data-bs-toggle="dropdown">
+                                <div class="row col-12">
+                                    <div class="col-1">
+                                        <i class="bx bx-hdd sidebar-btn-icons"></i>
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="sidebar-btn-span"> BNG's </span>
+                                    </div>
+                                    <div class="col-1">
+                                        <i class="bx bx-chevron-right sidebar-btn-icon-arrow"></i>
+                                    </div>
+                                </div>
+                            </button>
+                            <ul class="dropdown-menu sidebar-btn-ul">
+                                <li><a class="dropdown-item sidebar-li-a" href="../bng/huawei.html">Huawei</a></li>
+                                <li><a class="dropdown-item sidebar-li-a" href="../bng/juniper.html">Juniper</a></li>
+                                <li><a class="dropdown-item sidebar-li-a" href="../bng/mikrotik.html">Mikrotik</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown sidebar-dropdown-div">
+                            <button class="sidebar-btn" type="button" data-bs-toggle="dropdown">
+                                <div class="row col-12">
+                                    <div class="col-1">
+                                        <i class="bx bx-data sidebar-btn-icons"></i>
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="sidebar-btn-span"> CDN's </span>
+                                    </div>
+                                    <div class="col-1">
+                                        <i class="bx bx-chevron-right sidebar-btn-icon-arrow"></i>
+                                    </div>
+                                </div>
+                            </button>
+                            <ul class="dropdown-menu sidebar-btn-ul">
+                                <li><a class="dropdown-item sidebar-li-a" href="../cdn/facebook.html">Facebook</a></li>
+                                <li><a class="dropdown-item sidebar-li-a" href="../cdn/netflix.html">Netflix</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown sidebar-dropdown-div">
+                            <a class="sidebar-btn" type="button" href="../home/monitoramento.html">
+                                <div class="row col-12">
+                                    <div class="col-1">
+                                        <i class="bx bx-desktop sidebar-btn-icons"></i>
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="sidebar-btn-span"> Monitoramento </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="dropdown sidebar-dropdown-div">
+                            <button class="sidebar-btn" type="button" data-bs-toggle="dropdown">
+                                <div class="row col-12">
+                                    <div class="col-1">
+                                        <i class="bx bx-server sidebar-btn-icons"></i>
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="sidebar-btn-span"> OLT's </span>
+                                    </div>
+                                    <div class="col-1">
+                                        <i class="bx bx-chevron-right sidebar-btn-icon-arrow"></i>
+                                    </div>
+                                </div>
+                            </button>
+                            <ul class="dropdown-menu sidebar-btn-ul">
+                                <li><a class="dropdown-item sidebar-li-a" href="../olt/fiberhome.html">Fiberhome</a>
+                                </li>
+                                <li><a class="dropdown-item sidebar-li-a" href="../olt/olt_huawei.html">Huawei</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown sidebar-dropdown-div">
+                            <a class="sidebar-btn" type="button" href="#">
+                                <div class="row col-12">
+                                    <div class="col-1">
+                                        <i class="bx bx-wifi sidebar-btn-icons"></i>
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="sidebar-btn-span"> Repetidores </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="dropdown sidebar-dropdown-div">
+                            <a class="sidebar-btn" type="button" href="../inventario/inventario.html">
+                                <div class="row col-12">
+                                    <div class="col-1">
+                                        <i class="bx bx-calendar-edit sidebar-btn-icons"></i>
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="sidebar-btn-span"> Inventário </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="sidebar-footer">
+                            <hr>
+                            <div class="sidebar-footer-text">Copyright © &nbsp;&nbsp; brERS 2022</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page" id="page">
+
+        <div class="header" id="header">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-10">
+                        <button id="sidebarToggle" class="buttontoggler sidebarToggle" type="button">
+                            <span class="bx bx-menu"></span>
+                        </button>
+                    </div>
+
+                    <div class="dropdown col-2">
+                        <a class="link" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            BR ERS &nbsp
+                            <img src="https://img.icons8.com/ios-glyphs/90/000000/user-male-circle.png"
+                                class="rounded-circle" height="25" loading="lazy" />
+                        </a>
+                        <ul class="dropdown-menu conta" aria-labelledby="dropdownMenuLink">
+                            <li>
+                                <a class="dropdown-item" href="../conta/gerenciar.html">
+                                    <i class='bx bx-cog'></i> Gerenciar Conta
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class='bx bx-exit'></i> Sair
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="content" class="content">
+            <div class="row content-row">
+                <div class="row title">
+                    <h1>Repetidores</h1>
+                </div>
+                <div class="row row-space">
+                    <div class="col-md-3">
+                        <div class="card-body cards card_shadow col-12">
+                            <div class="input-group">
+                                <h5 class="col-12 h_shadow">BCA</h5>
+                            </div>
+                            <hr>
+                            <span class="card-text num info_shadow col-12 counter-up span_hover_none"
+                                data-count-to="882">882</span>
+                            <div class="input-group">
+                                <label class="col-9 info_shadow">Quantidade Total Clientes </label>
+                                <label class="label_group label_shadown">
+                                    <span class="counter-up span_hover_percentual" data-count-to="30">30</span>
+                                    ,
+                                    <span class="counter-up span_hover_percentual" data-count-to="27">27</span>
+                                    %
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card-body cards card_shadow col-12">
+                            <div class="input-group">
+                                <h5 class="col-12 h_shadow">BHE</h5>
+                            </div>
+                            <hr>
+                            <span class="card-text num info_shadow col-12 counter-up span_hover_none"
+                                data-count-to="817">817</span>
+                            <div class="input-group">
+                                <label class="col-9 info_shadow">Quantidade Total Clientes </label>
+                                <label class="label_group label_shadown">
+                                    <span class="counter-up span_hover_percentual" data-count-to="28">28</span>
+                                    ,
+                                    <span class="counter-up span_hover_percentual" data-count-to="04">04</span>
+                                    %
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card-body cards card_shadow col-12">
+                            <div class="input-group">
+                                <h5 class="col-12 h_shadow">CNL</h5>
+                            </div>
+                            <hr>
+                            <span class="card-text num info_shadow col-12 counter-up span_hover_none"
+                                data-count-to="289">289</span>
+                            <div class="input-group">
+                                <label class="col-9 info_shadow">Quantidade Total Clientes </label>
+                                <label class="label_group label_shadown">
+                                    <span class="counter-up span_hover_percentual" data-count-to="9">9</span>
+                                    ,
+                                    <span class="counter-up span_hover_percentual" data-count-to="92">92</span>
+                                    %
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card-body cards card_shadow col-12">
+                            <div class="input-group">
+                                <h5 class="col-12 h_shadow">JFA</h5>
+                            </div>
+                            <hr>
+                            <span class="card-text num info_shadow col-12 counter-up span_hover_none"
+                                data-count-to="926">926</span>
+                            <div class="input-group">
+                                <label class="col-9 info_shadow">Quantidade Total Clientes </label>
+                                <label class="label_group label_shadown">
+                                    <span class="counter-up span_hover_percentual" data-count-to="31">31</span>
+                                    ,
+                                    <span class="counter-up span_hover_percentual" data-count-to="78">78</span>
+                                    %
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-space">
+                    <div class="col-md-3">
+                        <div class="card card-align">
+                            <div class="card-header h_shadow">
+                                BCA Status Repetidores
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <span class="col-6">BCAUARM501</span>
+                                        <span class="col-3">OK</span>
+                                        <span class="col-3">3ms</span>
+                                    </div>
+                                </li>
+                                <li class="list-group-item text-bg-danger">
+                                    <div class="row">
+                                        <span class="col-6">BCAUARM502</span>
+                                        <span class="col-3">ERROR</span>
+                                        <span class="col-3">N/A</span>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <span class="col-6">BCAUARM503</span>
+                                        <span class="col-3">OK</span>
+                                        <span class="col-3">11ms</span>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <span class="col-6">BCAUARM504</span>
+                                        <span class="col-3">OK</span>
+                                        <span class="col-3">7ms</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card card-align">
+                            <div class="card-header h_shadow">
+                                BHE Status Repetidores
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <span class="col-6">BHEUARM501</span>
+                                        <span class="col-3">OK</span>
+                                        <span class="col-3">3ms</span>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <span class="col-6">BHEUARM502</span>
+                                        <span class="col-3">OK</span>
+                                        <span class="col-3">25ms</span>
+                                    </div>
+                                </li>
+                                <li class="list-group-item text-bg-warning">
+                                    <div class="row">
+                                        <span class="col-6">BHEUARM503</span>
+                                        <span class="col-3">WARN</span>
+                                        <span class="col-3">1211ms</span>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">&nbsp;
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card card-align">
+                            <div class="card-header h_shadow">
+                                CNL Status Repetidores
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <span class="col-6">CNLUARM501</span>
+                                        <span class="col-3">OK</span>
+                                        <span class="col-3">7ms</span>
+                                    </div>
+                                </li>
+                                <li class="list-group-item ">
+                                    <div class="row">
+                                        <span class="col-6">CNLUARM502</span>
+                                        <span class="col-3">OK</span>
+                                        <span class="col-3">5ms</span>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <span class="col-6">CNLUARM503</span>
+                                        <span class="col-3">OK</span>
+                                        <span class="col-3">5ms</span>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">&nbsp;
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card card-align">
+                            <div class="card-header h_shadow">
+                                JFA Status Repetidores
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <span class="col-6">JFAUARM501</span>
+                                        <span class="col-3">OK</span>
+                                        <span class="col-3">11ms</span>
+                                    </div>
+                                </li>
+                                <li class="list-group-item text-bg-danger">
+                                    <div class="row">
+                                        <span class="col-6">JFAUARM502</span>
+                                        <span class="col-3">ERROR</span>
+                                        <span class="col-3">N/A</span>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">&nbsp;
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-space">
+                    <div class="col-md-12">
+                        <div class="cards col-12">
+                            <div class="row h_shadow title-table">
+                                <h4>Lista de Repetidores</h4>
+                            </div>
+
+                            <table id="table_id" class="table table-striped table-bordered" class="display">
+                                <thead>
+                                    <tr>
+                                        <th>Cidade</th>
+                                        <th>Bairro</th>
+                                        <th>Hostname</th>
+                                        <th>Modelo</th>
+                                        <th>Version</th>
+                                        <th>IP</th>
+                                        <th>Nº Clientes</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>CNL</td>
+                                        <td>São Pedro</td>
+                                        <td>CNLUARM501</td>
+                                        <td>Ubiquiti</td>
+                                        <td>Airmax Rocket M5</td>
+                                        <td>172.24.0.2</td>
+                                        <td>93</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BCA</td>
+                                        <td>São José</td>
+                                        <td>BCAUARM501</td>
+                                        <td>Ubiquiti</td>
+                                        <td>Airmax Rocket M5</td>
+                                        <td>172.24.0.34</td>
+                                        <td>248</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BCA</td>
+                                        <td>São Francisco</td>
+                                        <td>BCAUARM502</td>
+                                        <td>Ubiquiti</td>
+                                        <td>Airmax Rocket M5</td>
+                                        <td>172.24.0.3</td>
+                                        <td>354</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CNL</td>
+                                        <td>Ipanema</td>
+                                        <td>CNLUARM502</td>
+                                        <td>Ubiquiti</td>
+                                        <td>Airmax Rocket M5</td>
+                                        <td>172.24.0.4</td>
+                                        <td>137</td>
+                                    </tr>
+                                    <tr>
+                                        <td>JFA</td>
+                                        <td>Andaraí</td>
+                                        <td>JFAUARM501</td>
+                                        <td>Ubiquiti</td>
+                                        <td>Airmax Rocket M5</td>
+                                        <td>172.24.0.5</td>
+                                        <td>572 </td>
+                                    </tr>
+                                    <tr>
+                                        <td>JFA</td>
+                                        <td>Alfrade</td>
+                                        <td>JFAUARM502</td>
+                                        <td>Ubiquiti</td>
+                                        <td>Airmax Rocket M5</td>
+                                        <td>172.24.0.6</td>
+                                        <td>354</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CNL</td>
+                                        <td>Boa Morte</td>
+                                        <td>CNLUARM503</td>
+                                        <td>Ubiquiti</td>
+                                        <td>Airmax Rocket M5</td>
+                                        <td>172.24.0.7</td>
+                                        <td>59</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BHE</td>
+                                        <td>Valentin</td>
+                                        <td>BHEUARM501</td>
+                                        <td>Ubiquiti</td>
+                                        <td>Airmax Rocket M5</td>
+                                        <td>172.24.0.8</td>
+                                        <td>432</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BCA</td>
+                                        <td>Centro</td>
+                                        <td>BCAUARM503</td>
+                                        <td>Ubiquiti</td>
+                                        <td>Airmax Rocket M5</td>
+                                        <td>172.24.0.9</td>
+                                        <td>130</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BCA</td>
+                                        <td>Centro</td>
+                                        <td>BCAUARM504</td>
+                                        <td>Ubiquiti</td>
+                                        <td>Airmax Rocket M5</td>
+                                        <td>172.24.0.10</td>
+                                        <td>150</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BHE</td>
+                                        <td>Centro</td>
+                                        <td>BHEUARM502</td>
+                                        <td>Ubiquiti</td>
+                                        <td>Airmax Rocket M5</td>
+                                        <td>172.24.0.11</td>
+                                        <td>285</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BHE</td>
+                                        <td>Centro</td>
+                                        <td>BHEUARM502</td>
+                                        <td>Ubiquiti</td>
+                                        <td>Airmax Rocket M5</td>
+                                        <td>172.24.0.12</td>
+                                        <td>100</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-space-footer"></div>
+
+            </div>
+        </div>
+
+    </div>
+    <script src="../../assets/js/nav.js"></script>
+</body>
+
+</html>

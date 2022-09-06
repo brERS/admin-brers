@@ -1,0 +1,73 @@
+/*brERS v1 Skin*/
+
+.ps {
+    padding: 3px;
+    
+}
+
+.title-ps{
+    font-weight: bolder;
+}
+
+.li-ps {
+    padding: 6px;
+}
+
+.card-align {
+    height: 100% !important;
+}
+
+.infomation-pos {
+    /*Setting infomation parameters*/ 
+    display: flex; 
+    justify-content: flex-end;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    margin-right: 0px !important;
+}
+  
+
+.infomation-icon {
+    /*Setting infomation icon parameters*/ 
+    animation: animate 1.5s linear infinite;
+    border-color: #d7293d !important;
+    background-color: #d7293d !important;
+    color: #fff !important;
+    padding: 10px !important;
+}
+
+.infomation {
+    /*Setting infomation parameters*/ 
+    border-color: #ffc107 !important;
+    background-color: #ffc107 !important;
+    color: #d7293d !important;
+}
+
+.infomation:hover{
+    /*Setting infomation float parameters*/ 
+    border-color: #d7293d !important;
+    background-color: #d7293d !important;
+    color: #fff !important;
+    color:#d7293d;
+}
+      
+  
+.infomation-content {
+    margin-right: 20px !important;
+}
+
+@keyframes animate{
+    0%{
+      opacity: 0.2;
+    }
+    50%{
+      opacity: 0.5;
+    }
+    100%{
+      opacity: 1;
+    }
+}
+
+body {
+ background-color: #fbfbfa !important;
+}

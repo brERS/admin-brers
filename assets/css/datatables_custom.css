@@ -1,0 +1,56 @@
+/* brERS v1 skin datatables */
+
+.botao{
+    /*Setting button parameters*/
+	border-color: #ffc107 !important;
+    background-color: #ffc107 !important;
+    color: #d7293d !important;
+	margin-right: 0.333em;
+}
+
+.botao:hover {
+    /*Setting button float parameters*/
+	border-color: #d7293d !important;
+    background-color: #d7293d !important;
+    color: #fff !important;
+	margin-right: 0.333em;
+}
+
+.page-link {
+    /*Setting pagination button color parameters*/
+    color: #696969 !important;
+}
+
+.page-link:hover {
+    /*Setting pagination button float parameters*/
+    border-color: #d7293d !important;
+	background-color: #d7293d !important;
+	color: #fff !important;
+}
+.page-item.active .page-link {
+    /*Setting pagination button active parameters*/
+    color: #d7293d !important;
+    background-color: #ffc107 !important;
+    border-color: #ffc107 !important;
+}
+
+.page-item.active .page-link:hover {
+    /*Setting pagination button float parameters*/
+    border-color: #d7293d !important;
+	background-color: #d7293d !important;
+	color: #fff !important;
+}
+
+.btn-custom {
+    /*Setting button tab parameters*/
+    width: 100%;
+}
+
+.dt-buttons {
+    /*Setting button tab parameters*/
+    margin-bottom: -47px !important;
+}
+
+.title-table {
+    border-bottom: 1px solid #adb5bd !important;
+}

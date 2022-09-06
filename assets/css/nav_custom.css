@@ -1,0 +1,365 @@
+/* brERS v1 skin */
+
+.sidebar {
+    /*Setting sidebar parameters*/
+    min-width: 280px;
+    max-width: 280px;
+    height: 100%;
+    position: fixed;    
+    
+}
+
+.sidebar-img-background {  
+    /*Setting sidebar background image parameters*/
+    height: 100%;
+    width: 100%;
+    background-image: url(https://img.freepik.com/fotos-gratis/terra-e-galaxia-elementos-desta-imagem-fornecidos-pela-nasa_335224-750.jpg?w=1380&t=st=1662232707~exp=1662233307~hmac=0d766b308f2c8d6649548fd430f37636234a074fd36b203b65a2451bcfeb9dc8) !important;
+    z-index: 1 !important;
+}
+
+.sidebar-background-color-opacity {
+    /*Setting sidebar background color parameters*/
+    background-color: rgba(215, 41, 61,0.8);
+    height: 100%;
+    width: 100%;
+    z-index: -2 !important;
+}
+
+.sidebar-body {
+    /*Setting sidebar body parameters*/    
+    height: 100%;
+    width: 100%;
+    color: #fff;
+}
+
+.sidebar-header-responsive {
+    /*Setting sidebar header reponsive parameters*/  
+    background-color: rgba(215, 41, 61,0.8);
+}
+
+.sidebar-header {
+    /*Setting sidebar header parameters*/ 
+    height: 50px;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: 600; 
+}
+
+.sidebar-header-icons {
+    /*Setting sidebar header icon parameters*/ 
+    font-size: 30px;
+    padding: 10px 10px 0px 0px;
+}
+
+.sidebar-header-span {
+    /*Setting sidebar header span parameters*/
+    padding: 15px 0px 0px 0px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.sidebar-header-span:hover {
+    /*Setting sidebar header span float parameters*/
+    padding: 15px 0px 0px 0px;
+    text-decoration: none;
+    color: #f4cf6d;    
+}
+
+.sidebar-dropdown-div {
+    /*Setting sidebar div parameters*/ 
+    background-color: rgba(215, 41, 61,0);
+    width: 100%;
+    margin-left: 10px;
+    cursor: pointer !important;
+}
+
+.sidebar-btn {
+    /*Setting the sidebar button parameters*/ 
+    background-color: rgba(215, 41, 61,0);
+    padding: 10px;
+    width: 100%;
+    border: rgba(215, 41, 61,0) 1px solid;
+    opacity: 1;
+    color:#fff ; 
+    text-align: left !important;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.sidebar-btn-span {
+    /*Setting the sidebar button span parameters*/
+    margin-left: 10px;
+}
+
+.sidebar-btn:hover {
+    /*Setting sidebar float button*/ 
+    color: #f4cf6d; 
+}
+
+.sidebar-btn:hover .sidebar-btn-icons {
+    /*Setting button icon animation when floating in sidebar*/ 
+    animation: rotacionar .3s;
+    animation-iteration-count: 1; 
+}
+
+.sidebar-btn:focus .sidebar-btn-icon-arrow {
+    /*Setting the button floating rotate arrow parameters in the sidebar*/ 
+    transform: rotate(+90deg);
+    
+}
+
+.sidebar-btn:focus {
+    /*Setting sidebar focus button parameters*/ 
+    color: #f4cf6d;    
+}
+
+.sidebar-btn-ul {
+    /*Setting the sidebar button ul parameters*/
+    background-color: #d7293d !important;
+    border-radius: 0px !important;
+    margin-left: 270px !important;
+    margin-top: -35px !important;
+
+}
+
+.sidebar-li-a {
+    /*Setting the sidebar button ul>li>a parameters*/
+    background-color: #d7293d;
+    color: #fff !important;
+    border: #d7293d 1px solid !important;
+
+}
+
+.sidebar-li-a:hover {
+    /*Setting the sidebar button floating ul>li>a parameters*/
+    background-color: #d7293d !important;
+    color: #f4cf6d !important;
+
+}
+
+
+@keyframes rotacionar {
+    /* keyframe ajust rotate */
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(+20deg);}
+    50% {transform: rotate(0deg);}
+    75% {transform: rotate(-20deg);}
+    100% {transform: rotate(0deg);}
+}
+
+.sidebar-footer {
+    /*Setting the sidebar footer parameters*/
+    bottom: 0;
+    position: fixed;
+    width: 280px;
+}
+
+.sidebar-footer-text {
+    /*Setting the sidebar footer text parameters*/
+    font-size: 15px;
+    margin-left: 10px;
+    margin-bottom: 17px;
+}
+
+.page {
+    /*Setting the page body parameters*/
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: -1!important;
+    padding: 0px 0px 0px 280px;
+}
+
+.page.active {
+    /*Setting the page body active parameters*/
+    left: -280px;
+    margin-right: 280px;
+}
+
+.header {
+    /*Setting the header body parameters*/
+    position: relative;
+    background-color: #fbfbfa;
+    width: 100%;    
+    border-bottom: #dcdcd3 1px solid;
+}
+
+.header.active {
+    /*Setting the header active body parameters*/
+    position: fixed;
+}
+
+.buttontoggler {
+    /*Setting the button toggler parameters*/
+    background-color: #fbfbfa;
+    padding: 10px;
+    border: none;
+    font-size: 30px;
+    color:#d7293d;
+}
+
+body.active .sidebar {
+    /*Setting the body active parameters*/
+    left: -280px;
+}
+
+.content {
+    /*Setting the content parameters*/
+    height: 100%;    
+    width: 100%;   
+    overflow: auto;
+}
+
+.content.active {    
+    /*Setting the content active parameters*/
+    margin-top: 67px;
+    position: fixed; 
+    overflow: auto;
+}
+
+.content-row {
+    background-color: #fbfbfa;
+    /*Setting the row in content parameters*/ 
+    width: 100%;
+    padding: 10px 0px 0px 30px;
+}
+
+
+.cards {
+    /*Setting the cards parameters*/
+    padding: 20px !important;
+    overflow: auto;
+
+    box-shadow: 0 0.46875rem 2.1875rem rgb(8 10 37 / 15%), 
+                0 0.9375rem 1.40625rem rgb(8 10 37 / 5%), 
+                0 0.25rem 0.53125rem rgb(8 10 37 / 5%), 
+                0 0.125rem 0.1875rem rgb(8 10 37 / 5%);
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid;
+    border-color: #dcdcd3 !important;
+}
+
+.title {
+    /*Setting the title cards parameters*/
+    color:#d7293d;
+    padding: 0px 0px 10px 0px;
+}
+
+.num{
+    /*Setting the number cards parameters*/
+	font-size: 2rem;
+}
+
+.card_shadow {
+    /*Setting the shadow cards parameters*/  
+    box-shadow: 0 0.46875rem 2.1875rem rgb(8 10 37 / 3%), 
+                0 0.9375rem 1.40625rem rgb(8 10 37 / 3%), 
+                0 0.25rem 0.53125rem rgb(8 10 37 / 5%), 
+                0 0.125rem 0.1875rem rgb(8 10 37 / 3%);
+}
+
+.h_shadow {	
+    /*Setting the shadow h parameters*/  
+    color: #d7293d !important;
+    font-weight: 600;
+	text-shadow: 0 0.46875rem 2.1875rem rgb(236 62 117 / 2%), 
+				0 0.9375rem 1.40625rem rgb(236 62 117  / 5%), 
+				0 0.25rem 0.53125rem rgb(236 62 117 / 10%), 
+				0 0.125rem 0.1875rem rgb(236 62 117  / 20%);
+}
+
+.info_shadow{
+    /*Setting the shadow info parameters*/ 
+	text-shadow: 0 0.46875rem 2.1875rem rgb(8 10 37 / 2%), 
+ 				0 0.9375rem 1.40625rem rgb(8 10 37 / 5%), 
+ 				0 0.25rem 0.53125rem rgb(8 10 37 / 30%), 
+ 				0 0.125rem 0.1875rem rgb(8 10 37 / 20%) !important;
+}
+
+.span_hover_none {
+    /*Setting the span float parameters*/ 
+	color: #000 !important;
+}
+
+.label_group {
+    /*Setting the label group parameters*/ 
+	display: flex; 
+	justify-content: flex-end;
+	border-radius: 10em !important;
+	background-color: #ffebee  ;
+	color: #f44336 !important;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+.label_shadown {
+    /*Setting the shadow label parameters*/ 
+	text-shadow: 0 0.46875rem 2.1875rem rgb(236 62 117 / 2%), 
+				0 0.9375rem 1.40625rem rgb(236 62 117  / 5%), 
+				0 0.25rem 0.53125rem rgb(236 62 117 / 10%), 
+				0 0.125rem 0.1875rem rgb(236 62 117  / 20%);	
+}
+
+.span_hover_percentual{
+    /*Setting the span float parameters*/ 
+	color: #d7293d !important;
+}
+
+.row-space{
+    /*Setting row space parameters*/ 
+    padding: 10px 0px 10px 0px;
+}
+
+.row-space-footer{
+    /*Setting footer row space parameters*/ 
+    padding: 100px 0px 0px 0px;
+}
+
+.link {
+    /*Setting link parameters*/ 
+    color: #000;
+    display: flex; 
+    justify-content: flex-end;
+    padding: 20px 0px 0px 0px;
+    text-decoration: none;
+}
+  
+.link:hover{
+    /*Setting link float parameters*/ 
+    color:#d7293d;
+}
+  
+.conta {
+    /*Setting conta parameters*/ 
+    margin-left: 80px !important;
+    margin-top: 20px !important;
+}
+
+
+/*Scroll*/
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #d7293d #d7293d;
+  }
+  
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+background: #d7293d;
+}
+
+*::-webkit-scrollbar-thumb {
+background-color: #d7293d;
+border-radius: 20px;
+border: 3px solid #fbfbfa;
+}
+
